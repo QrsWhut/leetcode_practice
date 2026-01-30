@@ -5,13 +5,17 @@
 
 public class Lcci1602WordsFrequency {
     // Problem statement: README.md in this folder.
-    // TODO: implement solution
-    // Time complexity: O()
-    // Space complexity: O()
+
+    public int solution(int[] nums) {
+        // TODO: implement
+        return 0;
+    }
 
     public static void main(String[] args) {
         Lcci1602WordsFrequency solution = new Lcci1602WordsFrequency();
-        // TODO: add test cases
-        System.out.println("TODO");
+
+        // Minimal test scaffold:
+        // int[] input = {1, 2, 3};
+        // System.out.println(solution.solution(input));
     }
 }
