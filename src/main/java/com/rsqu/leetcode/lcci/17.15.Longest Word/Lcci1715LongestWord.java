@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcci;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,14 @@ public class Lcci1715LongestWord {
     public static void main(String[] args) {
         Lcci1715LongestWord solution = new Lcci1715LongestWord();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: ["cat","banana","dog","nana","walk","walker","dogwalker"]
+        // Example 2:
+        // Output: "dogwalker"
+        // Example 3:
+        // 解释： "dogwalker"可由"dog"和"walker"组成。
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

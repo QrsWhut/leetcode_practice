@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcof;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,18 @@ public class Lcof41 {
     public static void main(String[] args) {
         Lcof41 solution = new Lcof41();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: 
+        // ["MedianFinder","addNum","addNum","findMedian","addNum","findMedian"]
+        // [[],[1],[2],[],[3],[]]
+        // Output: [null,null,null,1.50000,null,2.00000]
+        // Example 2:
+        // Input: 
+        // ["MedianFinder","addNum","findMedian","addNum","findMedian"]
+        // [[],[2],[],[3],[]]
+        // Output: [null,null,2.00000,null,2.50000]
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

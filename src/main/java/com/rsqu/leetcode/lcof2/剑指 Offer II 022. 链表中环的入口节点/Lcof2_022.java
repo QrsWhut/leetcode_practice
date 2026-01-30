@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcof2;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,16 @@ public class Lcof2_022 {
     public static void main(String[] args) {
         Lcof2_022 solution = new Lcof2_022();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: head = [3,2,0,-4], pos = 1
+        // Output: 返回索引为 1 的链表节点
+        // 解释：链表中有一个环，其尾部连接到第二个节点。
+        // Example 2:
+        // Input: head = [1,2], pos = 0
+        // Output: 返回索引为 0 的链表节点
+        // 解释：链表中有一个环，其尾部连接到第一个节点。
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

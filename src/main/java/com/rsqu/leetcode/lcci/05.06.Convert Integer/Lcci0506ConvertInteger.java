@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcci;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,14 @@ public class Lcci0506ConvertInteger {
     public static void main(String[] args) {
         Lcci0506ConvertInteger solution = new Lcci0506ConvertInteger();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: A = 29 （or者0b11101）, B = 15（or者0b01111）
+        // Output: 2
+        // Example 2:
+        // Input: A = 1，B = 2
+        // Output: 2
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

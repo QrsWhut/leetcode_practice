@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcci;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,18 @@ public class Lcci1622LangtonsAnt {
     public static void main(String[] args) {
         Lcci1622LangtonsAnt solution = new Lcci1622LangtonsAnt();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: 0
+        // Output: ["R"]
+        // Example 2:
+        // Input: 2
+        // Output: 
+        // [
+        // "_X",
+        // "LX"
+        // ]
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

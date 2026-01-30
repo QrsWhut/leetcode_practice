@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcci;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,12 @@ public class Lcci1701AddWithoutPlus {
     public static void main(String[] args) {
         Lcci1701AddWithoutPlus solution = new Lcci1701AddWithoutPlus();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: a = 1, b = 1
+        // Example 2:
+        // Output: 2
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcci;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,14 @@ public class Lcci1618PatternMatching {
     public static void main(String[] args) {
         Lcci1618PatternMatching solution = new Lcci1618PatternMatching();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: pattern = "abba", value = "dogcatcatdog"
+        // Output: true
+        // Example 2:
+        // Input: pattern = "abba", value = "dogcatcatfish"
+        // Output: false
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcci;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,14 @@ public class Lcci1705FindLongestSubarray {
     public static void main(String[] args) {
         Lcci1705FindLongestSubarray solution = new Lcci1705FindLongestSubarray();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: ["A","1","B","C","D","2","3","4","E","5","F","G","6","7","H","I","J","K","L","M"]
+        // Output: ["A","1","B","C","D","2","3","4","E","5","F","G","6","7"]
+        // Example 2:
+        // Input: ["A","A"]
+        // Output: []
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

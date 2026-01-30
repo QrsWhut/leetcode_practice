@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcof;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,17 @@ public class Lcof33 {
     public static void main(String[] args) {
         Lcof33 solution = new Lcof33();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // 5
+        // / \
+        // 2   6
+        // / \
+        // 1   3
+        // Example 2:
+        // Input: [1,6,3,2,5]
+        // Output: false
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

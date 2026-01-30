@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcof2;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,15 @@ public class Lcof2_010 {
     public static void main(String[] args) {
         Lcof2_010 solution = new Lcof2_010();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: nums = [1,1,1], k = 2
+        // Output: 2
+        // 解释: 此题 [1,1] 与 [1,1] 为两种不同的情况
+        // Example 2:
+        // Input: nums = [1,2,3], k = 3
+        // Output: 2
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

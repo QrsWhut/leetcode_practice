@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcci;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,12 @@ public class Lcci0202KthNodeFromEndofList {
     public static void main(String[] args) {
         Lcci0202KthNodeFromEndofList solution = new Lcci0202KthNodeFromEndofList();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: 1->2->3->4->5 和 k = 2
+        // Example 2:
+        // Output: 4
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

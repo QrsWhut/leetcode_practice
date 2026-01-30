@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcci;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,18 @@ public class Lcci0105OneAway {
     public static void main(String[] args) {
         Lcci0105OneAway solution = new Lcci0105OneAway();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: 
+        // first = "pale"
+        // second = "ple"
+        // Output: True
+        // Example 2:
+        // Input: 
+        // first = "pales"
+        // second = "pal"
+        // Output: False
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

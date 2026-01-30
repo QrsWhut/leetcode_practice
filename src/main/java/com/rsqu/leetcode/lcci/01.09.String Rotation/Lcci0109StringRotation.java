@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcci;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,14 @@ public class Lcci0109StringRotation {
     public static void main(String[] args) {
         Lcci0109StringRotation solution = new Lcci0109StringRotation();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: s1 = "waterbottle", s2 = "erbottlewat"
+        // Output: True
+        // Example 2:
+        // Input: s1 = "aa", "aba"
+        // Output: False
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

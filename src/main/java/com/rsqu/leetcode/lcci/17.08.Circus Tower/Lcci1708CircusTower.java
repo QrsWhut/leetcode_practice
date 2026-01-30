@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcci;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,14 @@ public class Lcci1708CircusTower {
     public static void main(String[] args) {
         Lcci1708CircusTower solution = new Lcci1708CircusTower();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: height = [65,70,56,75,60,68] weight = [100,150,90,190,95,110]
+        // Example 2:
+        // Output: 6
+        // Example 3:
+        // 解释：从上往下数，叠罗汉最多能叠 6 层：(56,90), (60,95), (65,100), (68,110), (70,150), (75,190)
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcci;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,14 @@ public class Lcci1706NumberOf2sInRange {
     public static void main(String[] args) {
         Lcci1706NumberOf2sInRange solution = new Lcci1706NumberOf2sInRange();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: 25
+        // Example 2:
+        // Output: 9
+        // Example 3:
+        // 解释: (2, 12, 20, 21, 22, 23, 24, 25)(注意 22 应该算作两次)
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcci;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,16 @@ public class Lcci1605FactorialZeros {
     public static void main(String[] args) {
         Lcci1605FactorialZeros solution = new Lcci1605FactorialZeros();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: 3
+        // Output: 0
+        // 解释: 3! = 6, 尾数中没有零。
+        // Example 2:
+        // Input: 5
+        // Output: 1
+        // 解释: 5! = 120, 尾数中有 1 个零.
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

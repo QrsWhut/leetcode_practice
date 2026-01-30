@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcof2;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,16 @@ public class Lcof2_011 {
     public static void main(String[] args) {
         Lcof2_011 solution = new Lcof2_011();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: nums = [0,1]
+        // Output: 2
+        // 说明: [0, 1] 是具有相同数量 0 和 1 的最长连续子数组。
+        // Example 2:
+        // Input: nums = [0,1,0]
+        // Output: 2
+        // 说明: [0, 1] (or [1, 0]) 是具有相同数量 0 和 1 的最长连续子数组。
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

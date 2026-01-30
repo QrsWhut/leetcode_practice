@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcci;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,12 @@ public class Lcci1011PeaksandValleys {
     public static void main(String[] args) {
         Lcci1011PeaksandValleys solution = new Lcci1011PeaksandValleys();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: [5, 3, 1, 2, 3]
+        // Example 2:
+        // Output: [5, 1, 3, 2, 3]
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

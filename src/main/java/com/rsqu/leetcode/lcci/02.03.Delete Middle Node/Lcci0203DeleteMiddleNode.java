@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcci;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,12 @@ public class Lcci0203DeleteMiddleNode {
     public static void main(String[] args) {
         Lcci0203DeleteMiddleNode solution = new Lcci0203DeleteMiddleNode();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: 节点 5 （位于单向链表 4->5->1->9 中）
+        // Example 2:
+        // Output: 不返回任何数据，从链表中删除传入的节点 5，使链表变为 4->1->9
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

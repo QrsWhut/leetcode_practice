@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcci;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,14 @@ public class Lcci0808PermutationII {
     public static void main(String[] args) {
         Lcci0808PermutationII solution = new Lcci0808PermutationII();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: S = "qqe"
+        // Output: ["eqq","qeq","qqe"]
+        // Example 2:
+        // Input: S = "ab"
+        // Output: ["ab", "ba"]
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

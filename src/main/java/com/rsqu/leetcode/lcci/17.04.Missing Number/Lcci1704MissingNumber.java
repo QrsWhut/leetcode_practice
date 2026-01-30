@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcci;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,14 @@ public class Lcci1704MissingNumber {
     public static void main(String[] args) {
         Lcci1704MissingNumber solution = new Lcci1704MissingNumber();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: [3,0,1]
+        // Output: 2
+        // Example 2:
+        // Input: [9,6,4,2,3,5,7,0,1]
+        // Output: 8
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }

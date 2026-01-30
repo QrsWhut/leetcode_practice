@@ -1,5 +1,4 @@
-﻿package com.rsqu.leetcode.lcci;
-
+﻿// Uncomment when needed:
 // import com.rsqu.leetcode.util.ListNode;
 // import com.rsqu.leetcode.util.TreeNode;
 
@@ -14,7 +13,12 @@ public class Lcci0104PalindromePermutation {
     public static void main(String[] args) {
         Lcci0104PalindromePermutation solution = new Lcci0104PalindromePermutation();
 
-        // Minimal test scaffold:
+        // Example 1:
+        // Input: "tactcoa"
+        // Example 2:
+        // Output: true（排列有"tacocat"、"atcocta"，等等）
+
+        // TODO: replace with the correct input/output types.
         // int[] input = {1, 2, 3};
         // System.out.println(solution.solution(input));
     }
