@@ -1,18 +1,18 @@
 package com.rsqu.leetcode.lcof.面试题22_链表中倒数第k个节点;
 
-public class Lcof22 {
-    // Problem statement: README.md in this folder.
+import com.rsqu.leetcode.util.ListNode;
 
-    public int solution(int[] nums) {
-        // TODO: implement
-        return 0;
+public class Lcof22 {
+    // 题目描述：本目录 README.md。
+
+    public ListNode solution(ListNode head, int k) {
+        // TODO：请实现解法
+        return null;
     }
 
     public static void main(String[] args) {
         Lcof22 solution = new Lcof22();
 
-        // TODO: replace with the correct input/output types.
-        // int[] input = {1, 2, 3};
-        // System.out.println(solution.solution(input));
+        // TODO：请根据 README.md 补充示例
     }
 }

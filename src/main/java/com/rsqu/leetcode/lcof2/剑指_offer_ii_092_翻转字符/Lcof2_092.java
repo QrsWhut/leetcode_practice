@@ -1,28 +1,111 @@
 package com.rsqu.leetcode.lcof2.剑指_offer_ii_092_翻转字符;
 
-public class Lcof2_092 {
-    // Problem statement: README.md in this folder.
+import java.util.*;
 
-    public int solution(int[] nums) {
-        // TODO: implement
+public class Lcof2_092 {
+    // 题目描述：本目录 README.md。
+
+    public int solution(String s) {
+        // TODO：请实现解法
         return 0;
     }
 
     public static void main(String[] args) {
         Lcof2_092 solution = new Lcof2_092();
 
-        // Example 1:
-        // Input: s = "00110"
-        // Output: 1 解释:我们翻转最后一位得到 00111.
-        // Example 2:
-        // Input: s = "010110"
-        // Output: 2 解释:我们翻转得到 011111，或者是 000111。
-        // Example 3:
-        // Input: s = "00011000"
-        // Output: 2 解释:我们翻转得到 00000000。
+        // 示例1
+        String s = "00110";
+        Object result1 = solution.solution(s);
+        Object expected1 = 1 解释:我们翻转最后一位得到 00111.;
+        boolean pass1 = isEqual(result1, expected1);
+        System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + format(result1) + "，期望=" + format(expected1));
 
-        // TODO: replace with the correct input/output types.
-        // int[] input = {1, 2, 3};
-        // System.out.println(solution.solution(input));
+        // 示例2
+        String s = "010110";
+        Object result2 = solution.solution(s);
+        // 期望输出可能包含多个结果：2 解释:我们翻转得到 011111，或者是 000111。
+        System.out.println("示例2输出：" + format(result2));
+
+        // 示例3
+        String s = "00011000";
+        Object result3 = solution.solution(s);
+        Object expected3 = 2 解释:我们翻转得到 00000000。;
+        boolean pass3 = isEqual(result3, expected3);
+        System.out.println("示例3：" + (pass3 ? "通过" : "失败") + "，输出=" + format(result3) + "，期望=" + format(expected3));
+
+    }
+
+    private static boolean isEqual(Object actual, Object expected) {
+        if (actual == null || expected == null) {
+            return actual == expected;
+        }
+        if (actual instanceof Double && expected instanceof Double) {
+            return Math.abs((Double) actual - (Double) expected) < 1e-6;
+        }
+        if (actual instanceof Float && expected instanceof Float) {
+            return Math.abs((Float) actual - (Float) expected) < 1e-6f;
+        }
+        if (actual.getClass().isArray() && expected.getClass().isArray()) {
+            if (actual instanceof int[] && expected instanceof int[]) {
+                return Arrays.equals((int[]) actual, (int[]) expected);
+            }
+            if (actual instanceof long[] && expected instanceof long[]) {
+                return Arrays.equals((long[]) actual, (long[]) expected);
+            }
+            if (actual instanceof short[] && expected instanceof short[]) {
+                return Arrays.equals((short[]) actual, (short[]) expected);
+            }
+            if (actual instanceof byte[] && expected instanceof byte[]) {
+                return Arrays.equals((byte[]) actual, (byte[]) expected);
+            }
+            if (actual instanceof char[] && expected instanceof char[]) {
+                return Arrays.equals((char[]) actual, (char[]) expected);
+            }
+            if (actual instanceof boolean[] && expected instanceof boolean[]) {
+                return Arrays.equals((boolean[]) actual, (boolean[]) expected);
+            }
+            if (actual instanceof float[] && expected instanceof float[]) {
+                return Arrays.equals((float[]) actual, (float[]) expected);
+            }
+            if (actual instanceof double[] && expected instanceof double[]) {
+                return Arrays.equals((double[]) actual, (double[]) expected);
+            }
+            return Arrays.deepEquals((Object[]) actual, (Object[]) expected);
+        }
+        return Objects.equals(actual, expected);
+    }
+
+    private static String format(Object value) {
+        if (value == null) {
+            return "null";
+        }
+        if (value.getClass().isArray()) {
+            if (value instanceof int[]) {
+                return Arrays.toString((int[]) value);
+            }
+            if (value instanceof long[]) {
+                return Arrays.toString((long[]) value);
+            }
+            if (value instanceof short[]) {
+                return Arrays.toString((short[]) value);
+            }
+            if (value instanceof byte[]) {
+                return Arrays.toString((byte[]) value);
+            }
+            if (value instanceof char[]) {
+                return Arrays.toString((char[]) value);
+            }
+            if (value instanceof boolean[]) {
+                return Arrays.toString((boolean[]) value);
+            }
+            if (value instanceof float[]) {
+                return Arrays.toString((float[]) value);
+            }
+            if (value instanceof double[]) {
+                return Arrays.toString((double[]) value);
+            }
+            return Arrays.deepToString((Object[]) value);
+        }
+        return String.valueOf(value);
     }
 }

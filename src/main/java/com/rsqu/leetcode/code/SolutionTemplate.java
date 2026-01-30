@@ -1,39 +1,23 @@
 package com.rsqu.leetcode.code;
 
-import com.rsqu.leetcode.util.ListNode;
-import com.rsqu.leetcode.util.TreeNode;
-
 /**
- * LeetCode 题目模板
- * 
- * 题目编号：
- * 题目名称：
- * 难度：
- * 题目链接：
- * 
- * @author rsqu
- * @since 2026-01-27
+ * LeetCode 题目模板。
  */
 public class SolutionTemplate {
-    
+
     /**
-     * 主要解法
-     * 
-     * 时间复杂度：O()
-     * 空间复杂度：O()
-     * 
+     * 主解法。
+     *
      * @param nums 输入参数
-     * @return 返回结果
+     * @return 结果
      */
     public int solution(int[] nums) {
-        // TODO: 实现解法
+        // TODO：请实现解法
         return 0;
     }
-    
-    /**
-     * 测试用例
-     */
+
     public static void main(String[] args) {
         SolutionTemplate solution = new SolutionTemplate();
+        // TODO：请补充测试用例
     }
 }

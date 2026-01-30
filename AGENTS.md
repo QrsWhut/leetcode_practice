@@ -2,6 +2,19 @@
 
 This repository is a Java LeetCode practice project.
 
+### Project general coding standards
+- All comments should be in Chinese.
+- When you write code, please write the best code possible, Avoid writing bad code.
+- Use camelCase for variables, functions, and methods
+- All files must be saved using UTF-8 encoding (without BOM).
+- If Chinese comments become garbled and contain "??", replace them with Chinese comments.
+  ###项目通用编码规范
+- 所有注释必须使用中文。
+- 编写代码应尽可能做到最佳实践，避免低质量代码。
+- 变量、函数与方法使用小驼峰命名（camelCase）。
+- 所有文件必须使用 UTF-8 编码（无 BOM）。
+- 若中文注释出现乱码并包含“？？”，则改用中文注释。
+
 ## Scope
 - Only practice problems in `lcci`, `lcof`, and `lcof2`.
 - Use Java for all solutions.

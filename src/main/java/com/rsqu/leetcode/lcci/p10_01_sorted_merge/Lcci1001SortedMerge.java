@@ -1,22 +1,97 @@
 package com.rsqu.leetcode.lcci.p10_01_sorted_merge;
 
-public class Lcci1001SortedMerge {
-    // Problem statement: README.md in this folder.
+import java.util.*;
 
-    public int solution(int[] nums) {
-        // TODO: implement
-        return 0;
+public class Lcci1001SortedMerge {
+    // 题目描述：本目录 README.md。
+
+    public void solution(int[] a, int m, int[] b, int n) {
+        // TODO：请实现解法
     }
 
     public static void main(String[] args) {
         Lcci1001SortedMerge solution = new Lcci1001SortedMerge();
 
-        // Example 1:
-        // Input: A = [1,2,3,0,0,0], m = 3 B = [2,5,6],       n = 3
-        // Output: [1,2,2,3,5,6]
+        // 示例1
+        int[] a = new int[]{1, 2, 3, 0, 0, 0};
+        int m = 3 B = [2,5,6];
+        // TODO：为 b 设置输入
+        int n = 3;
+        solution.solution(a, m, b, n);
 
-        // TODO: replace with the correct input/output types.
-        // int[] input = {1, 2, 3};
-        // System.out.println(solution.solution(input));
+    }
+
+    private static boolean isEqual(Object actual, Object expected) {
+        if (actual == null || expected == null) {
+            return actual == expected;
+        }
+        if (actual instanceof Double && expected instanceof Double) {
+            return Math.abs((Double) actual - (Double) expected) < 1e-6;
+        }
+        if (actual instanceof Float && expected instanceof Float) {
+            return Math.abs((Float) actual - (Float) expected) < 1e-6f;
+        }
+        if (actual.getClass().isArray() && expected.getClass().isArray()) {
+            if (actual instanceof int[] && expected instanceof int[]) {
+                return Arrays.equals((int[]) actual, (int[]) expected);
+            }
+            if (actual instanceof long[] && expected instanceof long[]) {
+                return Arrays.equals((long[]) actual, (long[]) expected);
+            }
+            if (actual instanceof short[] && expected instanceof short[]) {
+                return Arrays.equals((short[]) actual, (short[]) expected);
+            }
+            if (actual instanceof byte[] && expected instanceof byte[]) {
+                return Arrays.equals((byte[]) actual, (byte[]) expected);
+            }
+            if (actual instanceof char[] && expected instanceof char[]) {
+                return Arrays.equals((char[]) actual, (char[]) expected);
+            }
+            if (actual instanceof boolean[] && expected instanceof boolean[]) {
+                return Arrays.equals((boolean[]) actual, (boolean[]) expected);
+            }
+            if (actual instanceof float[] && expected instanceof float[]) {
+                return Arrays.equals((float[]) actual, (float[]) expected);
+            }
+            if (actual instanceof double[] && expected instanceof double[]) {
+                return Arrays.equals((double[]) actual, (double[]) expected);
+            }
+            return Arrays.deepEquals((Object[]) actual, (Object[]) expected);
+        }
+        return Objects.equals(actual, expected);
+    }
+
+    private static String format(Object value) {
+        if (value == null) {
+            return "null";
+        }
+        if (value.getClass().isArray()) {
+            if (value instanceof int[]) {
+                return Arrays.toString((int[]) value);
+            }
+            if (value instanceof long[]) {
+                return Arrays.toString((long[]) value);
+            }
+            if (value instanceof short[]) {
+                return Arrays.toString((short[]) value);
+            }
+            if (value instanceof byte[]) {
+                return Arrays.toString((byte[]) value);
+            }
+            if (value instanceof char[]) {
+                return Arrays.toString((char[]) value);
+            }
+            if (value instanceof boolean[]) {
+                return Arrays.toString((boolean[]) value);
+            }
+            if (value instanceof float[]) {
+                return Arrays.toString((float[]) value);
+            }
+            if (value instanceof double[]) {
+                return Arrays.toString((double[]) value);
+            }
+            return Arrays.deepToString((Object[]) value);
+        }
+        return String.valueOf(value);
     }
 }

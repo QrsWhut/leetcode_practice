@@ -1,28 +1,112 @@
 package com.rsqu.leetcode.lcof.面试题15_二进制中1的个数;
 
-public class Lcof15 {
-    // Problem statement: README.md in this folder.
+import java.util.*;
 
-    public int solution(int[] nums) {
-        // TODO: implement
+public class Lcof15 {
+    // 题目描述：本目录 README.md。
+
+    public int solution(int n) {
+        // TODO：请实现解法
         return 0;
     }
 
     public static void main(String[] args) {
         Lcof15 solution = new Lcof15();
 
-        // Example 1:
-        // Input: n = 11 (控制台输入 00000000000000000000000000001011)
-        // Output: 3 解释:输入的二进制串 00000000000000000000000000001011 中，共有三位为 '1'。
-        // Example 2:
-        // Input: n = 128 (控制台输入 00000000000000000000000010000000)
-        // Output: 1 解释:输入的二进制串 00000000000000000000000010000000 中，共有一位为 '1'。
-        // Example 3:
-        // Input: n = 4294967293 (控制台输入 11111111111111111111111111111101，部分语言中 n = -3）
-        // Output: 31 解释:输入的二进制串 11111111111111111111111111111101 中，共有 31 位为 '1'。
+        // 示例1
+        int n = 11 (控制台输入 00000000000000000000000000001011);
+        Object result1 = solution.solution(n);
+        Object expected1 = 3 解释:输入的二进制串 00000000000000000000000000001011 中，共有三位为 '1'。;
+        boolean pass1 = isEqual(result1, expected1);
+        System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + format(result1) + "，期望=" + format(expected1));
 
-        // TODO: replace with the correct input/output types.
-        // int[] input = {1, 2, 3};
-        // System.out.println(solution.solution(input));
+        // 示例2
+        int n = 128 (控制台输入 00000000000000000000000010000000);
+        Object result2 = solution.solution(n);
+        Object expected2 = 1 解释:输入的二进制串 00000000000000000000000010000000 中，共有一位为 '1'。;
+        boolean pass2 = isEqual(result2, expected2);
+        System.out.println("示例2：" + (pass2 ? "通过" : "失败") + "，输出=" + format(result2) + "，期望=" + format(expected2));
+
+        // 示例3
+        int n = 4294967293 (控制台输入 11111111111111111111111111111101，部分语言中 n = -3）;
+        Object result3 = solution.solution(n);
+        Object expected3 = 31 解释:输入的二进制串 11111111111111111111111111111101 中，共有 31 位为 '1'。;
+        boolean pass3 = isEqual(result3, expected3);
+        System.out.println("示例3：" + (pass3 ? "通过" : "失败") + "，输出=" + format(result3) + "，期望=" + format(expected3));
+
+    }
+
+    private static boolean isEqual(Object actual, Object expected) {
+        if (actual == null || expected == null) {
+            return actual == expected;
+        }
+        if (actual instanceof Double && expected instanceof Double) {
+            return Math.abs((Double) actual - (Double) expected) < 1e-6;
+        }
+        if (actual instanceof Float && expected instanceof Float) {
+            return Math.abs((Float) actual - (Float) expected) < 1e-6f;
+        }
+        if (actual.getClass().isArray() && expected.getClass().isArray()) {
+            if (actual instanceof int[] && expected instanceof int[]) {
+                return Arrays.equals((int[]) actual, (int[]) expected);
+            }
+            if (actual instanceof long[] && expected instanceof long[]) {
+                return Arrays.equals((long[]) actual, (long[]) expected);
+            }
+            if (actual instanceof short[] && expected instanceof short[]) {
+                return Arrays.equals((short[]) actual, (short[]) expected);
+            }
+            if (actual instanceof byte[] && expected instanceof byte[]) {
+                return Arrays.equals((byte[]) actual, (byte[]) expected);
+            }
+            if (actual instanceof char[] && expected instanceof char[]) {
+                return Arrays.equals((char[]) actual, (char[]) expected);
+            }
+            if (actual instanceof boolean[] && expected instanceof boolean[]) {
+                return Arrays.equals((boolean[]) actual, (boolean[]) expected);
+            }
+            if (actual instanceof float[] && expected instanceof float[]) {
+                return Arrays.equals((float[]) actual, (float[]) expected);
+            }
+            if (actual instanceof double[] && expected instanceof double[]) {
+                return Arrays.equals((double[]) actual, (double[]) expected);
+            }
+            return Arrays.deepEquals((Object[]) actual, (Object[]) expected);
+        }
+        return Objects.equals(actual, expected);
+    }
+
+    private static String format(Object value) {
+        if (value == null) {
+            return "null";
+        }
+        if (value.getClass().isArray()) {
+            if (value instanceof int[]) {
+                return Arrays.toString((int[]) value);
+            }
+            if (value instanceof long[]) {
+                return Arrays.toString((long[]) value);
+            }
+            if (value instanceof short[]) {
+                return Arrays.toString((short[]) value);
+            }
+            if (value instanceof byte[]) {
+                return Arrays.toString((byte[]) value);
+            }
+            if (value instanceof char[]) {
+                return Arrays.toString((char[]) value);
+            }
+            if (value instanceof boolean[]) {
+                return Arrays.toString((boolean[]) value);
+            }
+            if (value instanceof float[]) {
+                return Arrays.toString((float[]) value);
+            }
+            if (value instanceof double[]) {
+                return Arrays.toString((double[]) value);
+            }
+            return Arrays.deepToString((Object[]) value);
+        }
+        return String.valueOf(value);
     }
 }

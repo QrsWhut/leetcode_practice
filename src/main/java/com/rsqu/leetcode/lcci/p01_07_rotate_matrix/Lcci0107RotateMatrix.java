@@ -1,18 +1,15 @@
 package com.rsqu.leetcode.lcci.p01_07_rotate_matrix;
 
 public class Lcci0107RotateMatrix {
-    // Problem statement: README.md in this folder.
+    // 题目描述：本目录 README.md。
 
-    public int solution(int[] nums) {
-        // TODO: implement
-        return 0;
+    public void solution(int[][] matrix) {
+        // TODO：请实现解法
     }
 
     public static void main(String[] args) {
         Lcci0107RotateMatrix solution = new Lcci0107RotateMatrix();
 
-        // TODO: replace with the correct input/output types.
-        // int[] input = {1, 2, 3};
-        // System.out.println(solution.solution(input));
+        // TODO：请根据 README.md 补充示例
     }
 }
