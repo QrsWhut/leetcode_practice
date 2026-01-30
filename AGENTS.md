@@ -1,11 +1,11 @@
-# Project Agent Instructions
+ï»¿# Project Agent Instructions
 
 This repository is a Java LeetCode practice project.
 
 ## Scope
 - Only practice problems in `lcci`, `lcof`, and `lcof2`.
 - Use Java for all solutions.
-- Solutions should be placed under `src/main/java` (default: `src/main/java/leetcode/{lcci,lcof,lcof2}/`), one class per problem unless the user specifies otherwise.
+- Solutions should be placed under `src/main/java` (default: `src/main/java/com/rsqu/leetcode/{lcci,lcof,lcof2}/`), one class per problem unless the user specifies otherwise.
 - Tests (if any) go under `src/test/java`.
 
 ## Review workflow
@@ -32,7 +32,7 @@ This repository is a Java LeetCode practice project.
 ## Skills
 A skill is a set of local instructions to follow that is stored in a `SKILL.md` file. Below is the list of skills that can be used. Each entry includes a name, description, and file path so you can open the source for full instructions when using a specific skill.
 ### Available skills
-- ²¿ÊğÁ÷³Ì: ½« DataShareService ÏîÄ¿²¿Êğµ½²âÊÔÕ¾£¬Ö§³ÖÌø¹ı¹¹½¨ºÍÍêÕû¹¹½¨Á½ÖÖÄ£Ê½ (file: C:/Users/rsqu.rose/.codex/skills/deploy/SKILL.md)
+- éƒ¨ç½²æµç¨‹: å°† DataShareService é¡¹ç›®éƒ¨ç½²åˆ°æµ‹è¯•ç«™ï¼Œæ”¯æŒè·³è¿‡æ„å»ºå’Œå®Œæ•´æ„å»ºä¸¤ç§æ¨¡å¼ (file: C:/Users/rsqu.rose/.codex/skills/deploy/SKILL.md)
 - skill-creator: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations. (file: C:/Users/rsqu.rose/.codex/skills/.system/skill-creator/SKILL.md)
 - skill-installer: Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos). (file: C:/Users/rsqu.rose/.codex/skills/.system/skill-installer/SKILL.md)
 ### How to use skills
