@@ -1,6 +1,6 @@
 package com.rsqu.leetcode.lcof.面试题68_i_二叉搜索树的最近公共祖先;
 
-import java.util.*;
+import com.rsqu.leetcode.util.TestUtil;
 import com.rsqu.leetcode.util.TreeNode;
 
 public class Lcof68I {
@@ -15,102 +15,22 @@ public class Lcof68I {
         Lcof68I solution = new Lcof68I();
 
         // 示例1
-        TreeNode root = TreeNode.fromArray(new Integer[]{6, 2, 8, 0, 4, 7, 9, null, null, 3, 5});
-        TreeNode p = null;
-        TreeNode q = null;
-        Object result1 = solution.solution(root, p, q);
+        TreeNode root1 = TreeNode.fromArray(new Integer[]{6, 2, 8, 0, 4, 7, 9, null, null, 3, 5});
+        TreeNode p1 = null;
+        TreeNode q1 = null;
+        Object result1 = solution.solution(root1, p1, q1);
         Object expected1 = null;
-        boolean pass1 = isEqual(result1, expected1);
-        System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + format(result1) + "，期望=" + format(expected1));
+        boolean pass1 = TestUtil.isEqual(result1, expected1);
+        System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 
         // 示例2
-        TreeNode root = TreeNode.fromArray(new Integer[]{6, 2, 8, 0, 4, 7, 9, null, null, 3, 5});
-        TreeNode p = null;
-        TreeNode q = null;
-        Object result2 = solution.solution(root, p, q);
+        TreeNode root2 = TreeNode.fromArray(new Integer[]{6, 2, 8, 0, 4, 7, 9, null, null, 3, 5});
+        TreeNode p2 = null;
+        TreeNode q2 = null;
+        Object result2 = solution.solution(root2, p2, q2);
         Object expected2 = null;
-        boolean pass2 = isEqual(result2, expected2);
-        System.out.println("示例2：" + (pass2 ? "通过" : "失败") + "，输出=" + format(result2) + "，期望=" + format(expected2));
+        boolean pass2 = TestUtil.isEqual(result2, expected2);
+        System.out.println("示例2：" + (pass2 ? "通过" : "失败") + "，输出=" + TestUtil.format(result2) + "，期望=" + TestUtil.format(expected2));
 
-    }
-
-    private static boolean isEqual(Object actual, Object expected) {
-        if (actual == null || expected == null) {
-            return actual == expected;
-        }
-        if (actual instanceof Double && expected instanceof Double) {
-            return Math.abs((Double) actual - (Double) expected) < 1e-6;
-        }
-        if (actual instanceof Float && expected instanceof Float) {
-            return Math.abs((Float) actual - (Float) expected) < 1e-6f;
-        }
-        if (actual instanceof TreeNode && expected instanceof TreeNode) {
-            return TreeNode.toString((TreeNode) actual).equals(TreeNode.toString((TreeNode) expected));
-        }
-        if (actual.getClass().isArray() && expected.getClass().isArray()) {
-            if (actual instanceof int[] && expected instanceof int[]) {
-                return Arrays.equals((int[]) actual, (int[]) expected);
-            }
-            if (actual instanceof long[] && expected instanceof long[]) {
-                return Arrays.equals((long[]) actual, (long[]) expected);
-            }
-            if (actual instanceof short[] && expected instanceof short[]) {
-                return Arrays.equals((short[]) actual, (short[]) expected);
-            }
-            if (actual instanceof byte[] && expected instanceof byte[]) {
-                return Arrays.equals((byte[]) actual, (byte[]) expected);
-            }
-            if (actual instanceof char[] && expected instanceof char[]) {
-                return Arrays.equals((char[]) actual, (char[]) expected);
-            }
-            if (actual instanceof boolean[] && expected instanceof boolean[]) {
-                return Arrays.equals((boolean[]) actual, (boolean[]) expected);
-            }
-            if (actual instanceof float[] && expected instanceof float[]) {
-                return Arrays.equals((float[]) actual, (float[]) expected);
-            }
-            if (actual instanceof double[] && expected instanceof double[]) {
-                return Arrays.equals((double[]) actual, (double[]) expected);
-            }
-            return Arrays.deepEquals((Object[]) actual, (Object[]) expected);
-        }
-        return Objects.equals(actual, expected);
-    }
-
-    private static String format(Object value) {
-        if (value == null) {
-            return "null";
-        }
-        if (value instanceof TreeNode) {
-            return TreeNode.toString((TreeNode) value);
-        }
-        if (value.getClass().isArray()) {
-            if (value instanceof int[]) {
-                return Arrays.toString((int[]) value);
-            }
-            if (value instanceof long[]) {
-                return Arrays.toString((long[]) value);
-            }
-            if (value instanceof short[]) {
-                return Arrays.toString((short[]) value);
-            }
-            if (value instanceof byte[]) {
-                return Arrays.toString((byte[]) value);
-            }
-            if (value instanceof char[]) {
-                return Arrays.toString((char[]) value);
-            }
-            if (value instanceof boolean[]) {
-                return Arrays.toString((boolean[]) value);
-            }
-            if (value instanceof float[]) {
-                return Arrays.toString((float[]) value);
-            }
-            if (value instanceof double[]) {
-                return Arrays.toString((double[]) value);
-            }
-            return Arrays.deepToString((Object[]) value);
-        }
-        return String.valueOf(value);
     }
 }
