@@ -14,11 +14,11 @@ public class Lcci1611DivingBoard {
         Lcci1611DivingBoard solution = new Lcci1611DivingBoard();
 
         // 示例1
-        int shorter1 = 1 longer = 2 k = 3;
-        // TODO：为 longer1 设置输入
-        // TODO：为 k1 设置输入
+        int shorter1 = 1;
+        int longer1 = 2;
+        int k1 = 3;
         Object result1 = solution.solution(shorter1, longer1, k1);
-        Object expected1 = {3,4,5,6};
+        Object expected1 = new int[]{3,4,5,6};
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

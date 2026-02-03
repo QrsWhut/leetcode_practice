@@ -14,8 +14,8 @@ public class Lcci1001SortedMerge {
 
         // 示例1
         int[] a1 = new int[]{1, 2, 3, 0, 0, 0};
-        int m1 = 3 B = [2,5,6];
-        // TODO：为 b1 设置输入
+        int m1 = 3;
+        int[] b1 = new int[]{2, 5, 6};
         int n1 = 3;
         solution.solution(a1, m1, b1, n1);
 

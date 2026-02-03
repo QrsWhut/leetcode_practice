@@ -16,7 +16,7 @@ public class Lcof2_039 {
         // 示例1
         int[] heights1 = new int[]{2, 1, 5, 6, 2, 3};
         Object result1 = solution.solution(heights1);
-        Object expected1 = 10 解释:最大的矩形为图中红色区域，面积为 10;
+        Object expected1 = 10; // 解释:最大的矩形为图中红色区域，面积为 10
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

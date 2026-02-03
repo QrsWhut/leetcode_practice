@@ -24,11 +24,11 @@ public class Lcci1722WordTransformer {
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 
         // 示例2
-        String beginWord2 = ""hit" endWord = "cog" wordList = ["hot","dot","dog","lot","log"]";
-        // TODO：为 endWord2 设置输入
-        // TODO：为 wordList2 设置输入
+        String beginWord2 = "hit";
+        String endWord2 = "cog";
+        List<String> wordList2 = java.util.Arrays.asList("hot", "dot", "dog", "lot", "log");
         Object result2 = solution.solution(beginWord2, endWord2, wordList2);
-        Object expected2 = [] 解释: endWord "cog" 不在字典中，所以不存在符合要求的转换序列。;
+        Object expected2 = java.util.Arrays.asList(); // 解释: endWord "cog" 不在字典中，所以不存在符合要求的转换序列。
         boolean pass2 = TestUtil.isEqual(result2, expected2);
         System.out.println("示例2：" + (pass2 ? "通过" : "失败") + "，输出=" + TestUtil.format(result2) + "，期望=" + TestUtil.format(expected2));
 

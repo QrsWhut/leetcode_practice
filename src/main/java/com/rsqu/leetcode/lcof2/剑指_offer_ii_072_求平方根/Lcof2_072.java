@@ -23,7 +23,7 @@ public class Lcof2_072 {
         // 示例2
         int x2 = 8;
         Object result2 = solution.solution(x2);
-        Object expected2 = 2 说明: 根号 8 是 2.82842..., 由于返回类型是整数，小数部分将被舍去。;
+        Object expected2 = 2; // 说明: 根号 8 是 2.82842..., 由于返回类型是整数，小数部分将被舍去。
         boolean pass2 = TestUtil.isEqual(result2, expected2);
         System.out.println("示例2：" + (pass2 ? "通过" : "失败") + "，输出=" + TestUtil.format(result2) + "，期望=" + TestUtil.format(expected2));
 

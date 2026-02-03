@@ -29,7 +29,7 @@ public class Lcof58I {
         // 示例3
         String s3 = "a good   example";
         Object result3 = solution.solution(s3);
-        Object expected3 = ""example good a" 解释: 如果两个单词间有多余的空格，将反转后单词间的空格减少到只含一个。";
+        Object expected3 = "example good a"; // 解释: 如果两个单词间有多余的空格，将反转后单词间的空格减少到只含一个。"
         boolean pass3 = TestUtil.isEqual(result3, expected3);
         System.out.println("示例3：" + (pass3 ? "通过" : "失败") + "，输出=" + TestUtil.format(result3) + "，期望=" + TestUtil.format(expected3));
 

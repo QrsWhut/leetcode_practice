@@ -24,7 +24,7 @@ public class Lcci0405LegalBinarySearchTree {
         // 示例2
         TreeNode root2 = null;
         Object result2 = solution.solution(root2);
-        Object expected2 = false 解释: 输入为: [5,1,4,null,null,3,6]。 根节点的值为 5 ，但是其右子节点值为 4 。;
+        Object expected2 = false; // 解释: 输入为: [5,1,4,null,null,3,6]。 根节点的值为 5 ，但是其右子节点值为 4 。
         boolean pass2 = TestUtil.isEqual(result2, expected2);
         System.out.println("示例2：" + (pass2 ? "通过" : "失败") + "，输出=" + TestUtil.format(result2) + "，期望=" + TestUtil.format(expected2));
 

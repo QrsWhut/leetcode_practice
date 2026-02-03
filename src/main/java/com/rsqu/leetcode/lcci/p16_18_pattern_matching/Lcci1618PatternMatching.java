@@ -41,7 +41,7 @@ public class Lcci1618PatternMatching {
         String pattern4 = "abba";
         String value4 = "dogdogdogdog";
         Object result4 = solution.solution(pattern4, value4);
-        Object expected4 = true 解释: "a"="dogdog",b=""，反之也符合规则;
+        Object expected4 = true; // 解释: "a"="dogdog",b=""，反之也符合规则
         boolean pass4 = TestUtil.isEqual(result4, expected4);
         System.out.println("示例4：" + (pass4 ? "通过" : "失败") + "，输出=" + TestUtil.format(result4) + "，期望=" + TestUtil.format(expected4));
 

@@ -16,7 +16,7 @@ public class Lcof54 {
 
         // 示例1
         TreeNode root1 = TreeNode.fromArray(new Integer[]{3, 1, 4, null, 2});
-        int k1 = 1 3 / \ 1   4 \ 2;
+        int k1 = 1; // 3 / \ 1   4 \ 2
         Object result1 = solution.solution(root1, k1);
         Object expected1 = 4;
         boolean pass1 = TestUtil.isEqual(result1, expected1);
@@ -24,7 +24,7 @@ public class Lcof54 {
 
         // 示例2
         TreeNode root2 = TreeNode.fromArray(new Integer[]{5, 3, 6, 2, 4, null, null, 1});
-        int k2 = 3 5 / \ 3   6 / \ 2   4 / 1;
+        int k2 = 3; // 5 / \ 3   6 / \ 2   4 / 1
         Object result2 = solution.solution(root2, k2);
         Object expected2 = 4;
         boolean pass2 = TestUtil.isEqual(result2, expected2);

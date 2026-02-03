@@ -16,7 +16,7 @@ public class Lcci0205SumLists {
 
         // 示例1
         ListNode l11 = null;
-        // TODO：为 l21 设置输入
+        ListNode l21 = null;
         Object result1 = solution.solution(l11, l21);
         Object expected1 = null;
         boolean pass1 = TestUtil.isEqual(result1, expected1);
@@ -24,7 +24,7 @@ public class Lcci0205SumLists {
 
         // 示例2
         ListNode l12 = null;
-        // TODO：为 l22 设置输入
+        ListNode l22 = null;
         Object result2 = solution.solution(l12, l22);
         Object expected2 = null;
         boolean pass2 = TestUtil.isEqual(result2, expected2);

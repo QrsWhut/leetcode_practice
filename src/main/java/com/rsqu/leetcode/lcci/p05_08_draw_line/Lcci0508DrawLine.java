@@ -20,7 +20,7 @@ public class Lcci0508DrawLine {
         int x21 = 31;
         int y1 = 0;
         Object result1 = solution.solution(length1, w1, x11, x21, y1);
-        Object expected1 = new int[]{3] 说明:在第0行的第30位到第31为画一条直线，屏幕表示为[0b000000000000000000000000000000011};
+        Object expected1 = new int[]{3}; // 说明:在第0行的第30位到第31为画一条直线，屏幕表示为[0b000000000000000000000000000000011]
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

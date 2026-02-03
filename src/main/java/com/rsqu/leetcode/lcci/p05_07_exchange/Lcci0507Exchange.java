@@ -14,7 +14,7 @@ public class Lcci0507Exchange {
         Lcci0507Exchange solution = new Lcci0507Exchange();
 
         // 示例1
-        int num1 = 2（或者0b10） 输出 1 (或者 0b01);
+        int num1 = 2; // 或者 0b10，输出 1（或者 0b01）
         Object result1 = solution.solution(num1);
         System.out.println("示例1输出：" + TestUtil.format(result1));
 

@@ -15,8 +15,8 @@ public class Lcci0202KthNodeFromEndofList {
         Lcci0202KthNodeFromEndofList solution = new Lcci0202KthNodeFromEndofList();
 
         // 示例1
-        // TODO：为 head1 设置输入
-        // TODO：为 k1 设置输入
+        ListNode head1 = ListNode.fromArray(new int[]{1, 2, 3, 4, 5});
+        int k1 = 2;
         Object result1 = solution.solution(head1, k1);
         Object expected1 = 4;
         boolean pass1 = TestUtil.isEqual(result1, expected1);

@@ -2,12 +2,28 @@ package com.rsqu.leetcode.lcci.p01_02_check_permutation;
 
 import com.rsqu.leetcode.util.TestUtil;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Lcci0102CheckPermutation {
     // 题目描述：本目录 README.md。
 
     public boolean solution(String s1, String s2) {
-        // TODO：请实现解法
-        return false;
+        Map<Character, Integer> map = new HashMap<>();
+        char[] charArray1 = s1.toCharArray();
+        char[] charArray2 = s2.toCharArray();
+        for (char c : charArray1) {
+            map.put(c,map.getOrDefault(c,0) + 1);
+        }
+        for (char c : charArray2) {
+            map.put(c,map.getOrDefault(c,0) - 1);
+        }
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            if (entry.getValue() != 0) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public static void main(String[] args) {

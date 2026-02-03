@@ -18,7 +18,7 @@ public class Lcof2_115 {
         int[] nums1 = new int[]{1, 2, 3};
         List<List<Integer>> sequences1 = java.util.Arrays.asList(java.util.Arrays.asList(1, 2), java.util.Arrays.asList(1, 3));
         Object result1 = solution.solution(nums1, sequences1);
-        Object expected1 = false 解释:有两种可能的超序列:[1,2,3]和[1,3,2]。 序列 [1,2] 是[1,2,3]和[1,3,2]的子序列。 序列 [1,3] 是[1,2,3]和[1,3,2]的子序列。 因为 nums 不是唯一最短的超序列，所以返回false。;
+        Object expected1 = false; // 解释:有两种可能的超序列:[1,2,3]和[1,3,2]。 序列 [1,2] 是[1,2,3]和[1,3,2]的子序列。 序列 [1,3] 是[1,2,3]和[1,3,2]的子序列。 因为 nums 不是唯一最短的超序列，所以返回false。
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 
@@ -26,7 +26,7 @@ public class Lcof2_115 {
         int[] nums2 = new int[]{1, 2, 3};
         List<List<Integer>> sequences2 = java.util.Arrays.asList(java.util.Arrays.asList(1, 2));
         Object result2 = solution.solution(nums2, sequences2);
-        Object expected2 = false 解释:最短可能的超序列为 [1,2]。 序列 [1,2] 是它的子序列:[1,2]。 因为 nums 不是最短的超序列，所以返回false。;
+        Object expected2 = false; // 解释:最短可能的超序列为 [1,2]。 序列 [1,2] 是它的子序列:[1,2]。 因为 nums 不是最短的超序列，所以返回false。
         boolean pass2 = TestUtil.isEqual(result2, expected2);
         System.out.println("示例2：" + (pass2 ? "通过" : "失败") + "，输出=" + TestUtil.format(result2) + "，期望=" + TestUtil.format(expected2));
 
@@ -34,7 +34,7 @@ public class Lcof2_115 {
         int[] nums3 = new int[]{1, 2, 3};
         List<List<Integer>> sequences3 = java.util.Arrays.asList(java.util.Arrays.asList(1, 2), java.util.Arrays.asList(1, 3), java.util.Arrays.asList(2, 3));
         Object result3 = solution.solution(nums3, sequences3);
-        Object expected3 = true 解释:最短可能的超序列为[1,2,3]。 序列 [1,2] 是它的一个子序列:[1,2,3]。 序列 [1,3] 是它的一个子序列:[1,2,3]。 序列 [2,3] 是它的一个子序列:[1,2,3]。 因为 nums 是唯一最短的超序列，所以返回true。;
+        Object expected3 = true; // 解释:最短可能的超序列为[1,2,3]。 序列 [1,2] 是它的一个子序列:[1,2,3]。 序列 [1,3] 是它的一个子序列:[1,2,3]。 序列 [2,3] 是它的一个子序列:[1,2,3]。 因为 nums 是唯一最短的超序列，所以返回true。
         boolean pass3 = TestUtil.isEqual(result3, expected3);
         System.out.println("示例3：" + (pass3 ? "通过" : "失败") + "，输出=" + TestUtil.format(result3) + "，期望=" + TestUtil.format(expected3));
 

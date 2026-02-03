@@ -17,7 +17,7 @@ public class Lcof2_001 {
         int a1 = 15;
         int b1 = 2;
         Object result1 = solution.solution(a1, b1);
-        Object expected1 = 7 解释:15/2 = truncate(7.5) = 7;
+        Object expected1 = 7; // 解释:15/2 = truncate(7.5) = 7
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 
@@ -25,7 +25,7 @@ public class Lcof2_001 {
         int a2 = 7;
         int b2 = -3;
         Object result2 = solution.solution(a2, b2);
-        Object expected2 = -2 解释:7/-3 = truncate(-2.33333..) = -2;
+        Object expected2 = -2; // 解释:7/-3 = truncate(-2.33333..) = -2
         boolean pass2 = TestUtil.isEqual(result2, expected2);
         System.out.println("示例2：" + (pass2 ? "通过" : "失败") + "，输出=" + TestUtil.format(result2) + "，期望=" + TestUtil.format(expected2));
 

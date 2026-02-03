@@ -24,7 +24,7 @@ public class Lcof2_027 {
         // 示例2
         ListNode head2 = ListNode.fromArray(new int[]{1, 2});
         Object result2 = solution.solution(head2);
-        Object expected2 = fasle;
+        Object expected2 = false;
         boolean pass2 = TestUtil.isEqual(result2, expected2);
         System.out.println("示例2：" + (pass2 ? "通过" : "失败") + "，输出=" + TestUtil.format(result2) + "，期望=" + TestUtil.format(expected2));
 

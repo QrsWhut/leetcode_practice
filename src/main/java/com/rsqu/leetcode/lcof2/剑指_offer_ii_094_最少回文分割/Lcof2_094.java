@@ -16,7 +16,7 @@ public class Lcof2_094 {
         // 示例1
         String s1 = "aab";
         Object result1 = solution.solution(s1);
-        Object expected1 = 1 解释:只需一次分割就可将 s 分割成 ["aa","b"] 这样两个回文子串。;
+        Object expected1 = 1; // 解释:只需一次分割就可将 s 分割成 ["aa","b"] 这样两个回文子串。
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

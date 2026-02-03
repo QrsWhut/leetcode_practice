@@ -14,14 +14,14 @@ public class Lcci0503ReverseBits {
         Lcci0503ReverseBits solution = new Lcci0503ReverseBits();
 
         // 示例1
-        int num1 = 1775(110111011112);
+        int num1 = 1775; // 11011101111
         Object result1 = solution.solution(num1);
         Object expected1 = 8;
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 
         // 示例2
-        int num2 = 7(01112);
+        int num2 = 7; // 0111
         Object result2 = solution.solution(num2);
         Object expected2 = 4;
         boolean pass2 = TestUtil.isEqual(result2, expected2);

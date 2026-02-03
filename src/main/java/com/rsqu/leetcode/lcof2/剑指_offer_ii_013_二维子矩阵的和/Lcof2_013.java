@@ -14,12 +14,12 @@ public class Lcof2_013 {
         Lcof2_013 solution = new Lcof2_013();
 
         // 示例1
-        int row11 = ["NumMatrix","sumRegion","sumRegion","sumRegion"] [[[[3,0,1,4,2],[5,6,3,2,1],[1,2,0,1,5],[4,1,0,1,7],[1,0,3,0,5]]],[2,1,4,3],[1,1,2,2],[1,2,2,4]];
-        // TODO：为 col11 设置输入
-        // TODO：为 row21 设置输入
-        // TODO：为 col21 设置输入
+        int row11 = 2;
+        int col11 = 1;
+        int row21 = 4;
+        int col21 = 3;
         Object result1 = solution.solution(row11, col11, row21, col21);
-        Object expected1 = [null, 8, 11, 12] 解释: NumMatrix numMatrix = new NumMatrix([[3,0,1,4,2],[5,6,3,2,1],[1,2,0,1,5],[4,1,0,1,7],[1,0,3,0,5]]]); numMatrix.sumRegion(2, 1, 4, 3); // return 8 (红色矩形框的元素总和) numMatrix.sumRegion(1, 1, 2, 2); // return 11 (绿色矩形框的元素总和) numMatrix.sumRegion(1, 2, 2, 4); // return 12 (蓝色矩形框的元素总和);
+        Object expected1 = 8; // 解释: 示例中查询 (2,1) 到 (4,3) 的区域和为 8
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

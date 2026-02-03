@@ -19,7 +19,7 @@ public class Lcof2_108 {
         String endWord1 = "cog";
         List<String> wordList1 = java.util.Arrays.asList("hot", "dot", "dog", "lot", "log", "cog");
         Object result1 = solution.solution(beginWord1, endWord1, wordList1);
-        Object expected1 = 5 解释:一个最短转换序列是 "hit" -> "hot" -> "dot" -> "dog" -> "cog", 返回它的长度 5。;
+        Object expected1 = 5; // 解释:一个最短转换序列是 "hit" -> "hot" -> "dot" -> "dog" -> "cog", 返回它的长度 5。
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 
@@ -28,7 +28,7 @@ public class Lcof2_108 {
         String endWord2 = "cog";
         List<String> wordList2 = java.util.Arrays.asList("hot", "dot", "dog", "lot", "log");
         Object result2 = solution.solution(beginWord2, endWord2, wordList2);
-        Object expected2 = 0 解释:endWord "cog" 不在字典中，所以无法进行转换。;
+        Object expected2 = 0; // 解释:endWord "cog" 不在字典中，所以无法进行转换。
         boolean pass2 = TestUtil.isEqual(result2, expected2);
         System.out.println("示例2：" + (pass2 ? "通过" : "失败") + "，输出=" + TestUtil.format(result2) + "，期望=" + TestUtil.format(expected2));
 

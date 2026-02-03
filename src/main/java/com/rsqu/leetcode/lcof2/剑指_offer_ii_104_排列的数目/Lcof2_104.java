@@ -17,7 +17,7 @@ public class Lcof2_104 {
         int[] nums1 = new int[]{1, 2, 3};
         int target1 = 4;
         Object result1 = solution.solution(nums1, target1);
-        Object expected1 = 7 解释: 所有可能的组合为: (1, 1, 1, 1) (1, 1, 2) (1, 2, 1) (1, 3) (2, 1, 1) (2, 2) (3, 1) 请注意，顺序不同的序列被视作不同的组合。;
+        Object expected1 = 7; // 解释: 所有可能的组合为: (1, 1, 1, 1) (1, 1, 2) (1, 2, 1) (1, 3) (2, 1, 1) (2, 2) (3, 1) 请注意，顺序不同的序列被视作不同的组合。
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

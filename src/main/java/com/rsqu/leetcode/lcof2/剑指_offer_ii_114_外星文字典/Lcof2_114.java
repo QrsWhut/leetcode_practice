@@ -30,7 +30,7 @@ public class Lcof2_114 {
         // 示例3
         String[] words3 = new String[]{"z", "x", "z"};
         Object result3 = solution.solution(words3);
-        Object expected3 = """ 解释:不存在合法字母顺序，因此返回 "" 。";
+        Object expected3 = ""; // 解释:不存在合法字母顺序，因此返回 "" 。"
         boolean pass3 = TestUtil.isEqual(result3, expected3);
         System.out.println("示例3：" + (pass3 ? "通过" : "失败") + "，输出=" + TestUtil.format(result3) + "，期望=" + TestUtil.format(expected3));
 

@@ -16,7 +16,7 @@ public class Lcof2_011 {
         // 示例1
         int[] nums1 = new int[]{0, 1};
         Object result1 = solution.solution(nums1);
-        Object expected1 = 2 说明: [0, 1] 是具有相同数量 0 和 1 的最长连续子数组。;
+        Object expected1 = 2; // 说明: [0, 1] 是具有相同数量 0 和 1 的最长连续子数组。
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

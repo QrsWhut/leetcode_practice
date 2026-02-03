@@ -14,9 +14,9 @@ public class Lcof2_059 {
         Lcof2_059 solution = new Lcof2_059();
 
         // 示例1
-        int val1 = ["KthLargest", "add", "add", "add", "add", "add"] [[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]];
+        int val1 = 3;
         Object result1 = solution.solution(val1);
-        Object expected1 = [null, 4, 5, 5, 8, 8] 解释: KthLargest kthLargest = new KthLargest(3, [4, 5, 8, 2]); kthLargest.add(3);   // return 4 kthLargest.add(5);   // return 5 kthLargest.add(10);  // return 5 kthLargest.add(9);   // return 8 kthLargest.add(4);   // return 8;
+        Object expected1 = 4; // 解释: 示例中第一次 add(3) 的返回值为 4
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

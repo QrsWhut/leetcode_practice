@@ -17,7 +17,7 @@ public class Lcof2_113 {
         int numCourses1 = 2;
         int[][] prerequisites1 = new int[][]{{1, 0}};
         Object result1 = solution.solution(numCourses1, prerequisites1);
-        Object expected1 = [0,1] 解释: 总共有 2 门课程。要学习课程 1，你需要先完成课程 0。因此，正确的课程顺序为 [0,1] 。;
+        Object expected1 = java.util.Arrays.asList(0,1); // 解释: 总共有 2 门课程。要学习课程 1，你需要先完成课程 0。因此，正确的课程顺序为 [0,1] 。
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 
@@ -32,7 +32,7 @@ public class Lcof2_113 {
         int numCourses3 = 1;
         int[][] prerequisites3 = new int[][]{};
         Object result3 = solution.solution(numCourses3, prerequisites3);
-        Object expected3 = [0] 解释: 总共 1 门课，直接修第一门课就可。;
+        Object expected3 = java.util.Arrays.asList(0); // 解释: 总共 1 门课，直接修第一门课就可。
         boolean pass3 = TestUtil.isEqual(result3, expected3);
         System.out.println("示例3：" + (pass3 ? "通过" : "失败") + "，输出=" + TestUtil.format(result3) + "，期望=" + TestUtil.format(expected3));
 
