@@ -2,12 +2,23 @@ package com.rsqu.leetcode.lcci.p01_01_is_unique;
 
 import com.rsqu.leetcode.util.TestUtil;
 
+import java.util.HashSet;
+import java.util.Set;
+import java.util.stream.IntStream;
+
 public class Lcci0101IsUnique {
     // 题目描述：本目录 README.md。
 
     public boolean solution(String astr) {
-        // TODO：请实现解法
-        return false;
+        Set<Character> set = new HashSet<>();
+        char[] charArray = astr.toCharArray();
+        for (int i = 0; i < charArray.length; i++) {
+            if (set.contains(charArray[i])) {
+                return false;
+            }
+            set.add(charArray[i]);
+        }
+        return true;
     }
 
     public static void main(String[] args) {

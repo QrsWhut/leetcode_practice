@@ -16,7 +16,7 @@ public class Lcof2_092 {
         // 示例1
         String s1 = "00110";
         Object result1 = solution.solution(s1);
-        Object expected1 = 1 解释:我们翻转最后一位得到 00111.;
+        Object expected1 = 1; // 解释:我们翻转最后一位得到 00111.
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 
@@ -29,7 +29,7 @@ public class Lcof2_092 {
         // 示例3
         String s3 = "00011000";
         Object result3 = solution.solution(s3);
-        Object expected3 = 2 解释:我们翻转得到 00000000。;
+        Object expected3 = 2; // 解释:我们翻转得到 00000000。
         boolean pass3 = TestUtil.isEqual(result3, expected3);
         System.out.println("示例3：" + (pass3 ? "通过" : "失败") + "，输出=" + TestUtil.format(result3) + "，期望=" + TestUtil.format(expected3));
 

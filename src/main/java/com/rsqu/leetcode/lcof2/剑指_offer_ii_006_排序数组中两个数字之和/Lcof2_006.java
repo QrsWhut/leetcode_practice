@@ -17,7 +17,7 @@ public class Lcof2_006 {
         int[] numbers1 = new int[]{1, 2, 4, 6, 10};
         int target1 = 8;
         Object result1 = solution.solution(numbers1, target1);
-        Object expected1 = [1,3] 解释:2 与 6 之和等于目标数 8 。因此 index1 = 1, index2 = 3 。;
+        Object expected1 = java.util.Arrays.asList(1,3); // 解释:2 与 6 之和等于目标数 8 。因此 index1 = 1, index2 = 3 。
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

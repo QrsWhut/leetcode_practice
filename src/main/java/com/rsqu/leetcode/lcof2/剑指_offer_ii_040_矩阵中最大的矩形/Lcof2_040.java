@@ -16,7 +16,7 @@ public class Lcof2_040 {
         // 示例1
         String[] matrix1 = new String[]{"10100", "10111", "11111", "10010"};
         Object result1 = solution.solution(matrix1);
-        Object expected1 = 6 解释:最大矩形如上图所示。;
+        Object expected1 = 6; // 解释:最大矩形如上图所示。
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

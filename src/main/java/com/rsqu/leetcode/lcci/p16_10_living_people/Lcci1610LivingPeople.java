@@ -14,8 +14,8 @@ public class Lcci1610LivingPeople {
         Lcci1610LivingPeople solution = new Lcci1610LivingPeople();
 
         // 示例1
-        int[] birth1 = {1900, 1901, 1950} death = {1948, 1951, 2000};
-        // TODO：为 death1 设置输入
+        int[] birth1 = new int[]{1900, 1901, 1950};
+        int[] death1 = new int[]{1948, 1951, 2000};
         Object result1 = solution.solution(birth1, death1);
         Object expected1 = 1901;
         boolean pass1 = TestUtil.isEqual(result1, expected1);

@@ -23,8 +23,8 @@ public class Lcci0408FirstCommonAncestor {
 
         // 示例2
         TreeNode root2 = null;
-        // TODO：为 p2 设置输入
-        // TODO：为 q2 设置输入
+        TreeNode p2 = null;
+        TreeNode q2 = null;
         Object result2 = solution.solution(root2, p2, q2);
         System.out.println("示例2输出：" + TestUtil.format(result2));
 

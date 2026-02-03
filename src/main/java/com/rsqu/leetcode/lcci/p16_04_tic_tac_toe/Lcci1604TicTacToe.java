@@ -23,14 +23,14 @@ public class Lcci1604TicTacToe {
         // 示例2
         String[] board2 = new String[]{"OOX", "XXO", "OXO"};
         Object result2 = solution.solution(board2);
-        Object expected2 = ""Draw" 解释: 没有玩家获胜且不存在空位";
+        Object expected2 = "Draw"; // 解释: 没有玩家获胜且不存在空位"
         boolean pass2 = TestUtil.isEqual(result2, expected2);
         System.out.println("示例2：" + (pass2 ? "通过" : "失败") + "，输出=" + TestUtil.format(result2) + "，期望=" + TestUtil.format(expected2));
 
         // 示例3
         String[] board3 = new String[]{"OOX", "XXO", "OX "};
         Object result3 = solution.solution(board3);
-        Object expected3 = ""Pending" 解释: 没有玩家获胜且仍存在空位";
+        Object expected3 = "Pending"; // 解释: 没有玩家获胜且仍存在空位"
         boolean pass3 = TestUtil.isEqual(result3, expected3);
         System.out.println("示例3：" + (pass3 ? "通过" : "失败") + "，输出=" + TestUtil.format(result3) + "，期望=" + TestUtil.format(expected3));
 

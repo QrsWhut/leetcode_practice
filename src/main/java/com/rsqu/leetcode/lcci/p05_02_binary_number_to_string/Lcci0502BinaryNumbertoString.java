@@ -23,7 +23,7 @@ public class Lcci0502BinaryNumbertoString {
         // 示例2
         double num2 = 0.1;
         Object result2 = solution.solution(num2);
-        Object expected2 = ""ERROR" 提示:0.1无法被二进制准确表示";
+        Object expected2 = "ERROR"; // 提示:0.1无法被二进制准确表示"
         boolean pass2 = TestUtil.isEqual(result2, expected2);
         System.out.println("示例2：" + (pass2 ? "通过" : "失败") + "，输出=" + TestUtil.format(result2) + "，期望=" + TestUtil.format(expected2));
 

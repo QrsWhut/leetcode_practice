@@ -16,14 +16,14 @@ public class Lcof2_090 {
         // 示例1
         int[] nums1 = new int[]{2, 3, 2};
         Object result1 = solution.solution(nums1);
-        Object expected1 = 3 解释:你不能先偷窃 1 号房屋（金额 = 2），然后偷窃 3 号房屋（金额 = 2）, 因为他们是相邻的。;
+        Object expected1 = 3; // 解释:你不能先偷窃 1 号房屋（金额 = 2），然后偷窃 3 号房屋（金额 = 2）, 因为他们是相邻的。
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 
         // 示例2
         int[] nums2 = new int[]{1, 2, 3, 1};
         Object result2 = solution.solution(nums2);
-        Object expected2 = 4 解释:你可以先偷窃 1 号房屋（金额 = 1），然后偷窃 3 号房屋（金额 = 3）。 偷窃到的最高金额 = 1 + 3 = 4 。;
+        Object expected2 = 4; // 解释:你可以先偷窃 1 号房屋（金额 = 1），然后偷窃 3 号房屋（金额 = 3）。 偷窃到的最高金额 = 1 + 3 = 4 。
         boolean pass2 = TestUtil.isEqual(result2, expected2);
         System.out.println("示例2：" + (pass2 ? "通过" : "失败") + "，输出=" + TestUtil.format(result2) + "，期望=" + TestUtil.format(expected2));
 

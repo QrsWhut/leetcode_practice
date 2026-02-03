@@ -14,7 +14,7 @@ public class Lcci0504ClosedNumber {
         Lcci0504ClosedNumber solution = new Lcci0504ClosedNumber();
 
         // 示例1
-        int num1 = 2（或者0b10）;
+        int num1 = 2; // 或者 0b10
         Object result1 = solution.solution(num1);
         // 期望输出可能包含多个结果：[4, 1] 或者（[0b100, 0b1]）
         System.out.println("示例1输出：" + TestUtil.format(result1));

@@ -17,7 +17,7 @@ public class Lcof2_100 {
         // 示例1
         List<List<Integer>> triangle1 = java.util.Arrays.asList(java.util.Arrays.asList(2), java.util.Arrays.asList(3, 4), java.util.Arrays.asList(6, 5, 7), java.util.Arrays.asList(4, 1, 8, 3));
         Object result1 = solution.solution(triangle1);
-        Object expected1 = 11 解释:如下面简图所示: 2 3 4 6 5 7 4 1 8 3 自顶向下的最小路径和为 11（即，2 + 3 + 5 + 1 = 11）。;
+        Object expected1 = 11; // 解释:如下面简图所示: 2 3 4 6 5 7 4 1 8 3 自顶向下的最小路径和为 11（即，2 + 3 + 5 + 1 = 11）。
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

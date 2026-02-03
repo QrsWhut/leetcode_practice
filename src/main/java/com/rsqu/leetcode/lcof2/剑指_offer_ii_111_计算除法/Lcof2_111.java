@@ -19,7 +19,7 @@ public class Lcof2_111 {
         double[] values1 = new double[]{2.0, 3.0};
         List<List<String>> queries1 = java.util.Arrays.asList(java.util.Arrays.asList("a", "c"), java.util.Arrays.asList("b", "a"), java.util.Arrays.asList("a", "e"), java.util.Arrays.asList("a", "a"), java.util.Arrays.asList("x", "x"));
         Object result1 = solution.solution(equations1, values1, queries1);
-        Object expected1 = new double[]{6.00000, 0.50000, -1.00000, 1.00000, -1.00000] 解释: 条件:a / b = 2.0, b / c = 3.0 问题:a / c = ?, b / a = ?, a / e = ?, a / a = ?, x / x = ? 结果:[6.0, 0.5, -1.0, 1.0, -1.0};
+        Object expected1 = new double[]{6.00000, 0.50000, -1.00000, 1.00000, -1.00000}; // 解释: 条件:a / b = 2.0, b / c = 3.0 问题:a / c = ?, b / a = ?, a / e = ?, a / a = ?, x / x = ? 结果:[6.0, 0.5, -1.0, 1.0, -1.0]
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

@@ -23,14 +23,14 @@ public class Lcof67 {
         // 示例2
         String str2 = "   -42";
         Object result2 = solution.solution(str2);
-        Object expected2 = -42 解释: 第一个非空白字符为 '-', 它是一个负号。 我们尽可能将负号与后面所有连续出现的数字组合起来，最后得到 -42 。;
+        Object expected2 = -42; // 解释: 第一个非空白字符为 '-', 它是一个负号。 我们尽可能将负号与后面所有连续出现的数字组合起来，最后得到 -42 。
         boolean pass2 = TestUtil.isEqual(result2, expected2);
         System.out.println("示例2：" + (pass2 ? "通过" : "失败") + "，输出=" + TestUtil.format(result2) + "，期望=" + TestUtil.format(expected2));
 
         // 示例3
         String str3 = "4193 with words";
         Object result3 = solution.solution(str3);
-        Object expected3 = 4193 解释: 转换截止于数字 '3' ，因为它的下一个字符不为数字。;
+        Object expected3 = 4193; // 解释: 转换截止于数字 '3' ，因为它的下一个字符不为数字。
         boolean pass3 = TestUtil.isEqual(result3, expected3);
         System.out.println("示例3：" + (pass3 ? "通过" : "失败") + "，输出=" + TestUtil.format(result3) + "，期望=" + TestUtil.format(expected3));
 
@@ -43,7 +43,7 @@ public class Lcof67 {
         // 示例5
         String str5 = "-91283472332";
         Object result5 = solution.solution(str5);
-        Object expected5 = -2147483648 解释: 数字 "-91283472332" 超过 32 位有符号整数范围。 因此返回 INT_MIN (−231) 。;
+        Object expected5 = -2147483648; // 解释: 数字 "-91283472332" 超过 32 位有符号整数范围。 因此返回 INT_MIN (−231) 。
         boolean pass5 = TestUtil.isEqual(result5, expected5);
         System.out.println("示例5：" + (pass5 ? "通过" : "失败") + "，输出=" + TestUtil.format(result5) + "，期望=" + TestUtil.format(expected5));
 

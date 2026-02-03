@@ -15,7 +15,7 @@ public class Lcof58II {
 
         // 示例1
         String s1 = "abcdefg";
-        // TODO：为 n1 设置输入
+        int n1 = 2;
         Object result1 = solution.solution(s1, n1);
         Object expected1 = "cdefgab";
         boolean pass1 = TestUtil.isEqual(result1, expected1);
@@ -23,7 +23,7 @@ public class Lcof58II {
 
         // 示例2
         String s2 = "lrloseumgh";
-        // TODO：为 n2 设置输入
+        int n2 = 6;
         Object result2 = solution.solution(s2, n2);
         Object expected2 = "umghlrlose";
         boolean pass2 = TestUtil.isEqual(result2, expected2);

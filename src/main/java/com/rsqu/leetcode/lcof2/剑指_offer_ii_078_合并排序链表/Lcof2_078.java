@@ -15,7 +15,11 @@ public class Lcof2_078 {
         Lcof2_078 solution = new Lcof2_078();
 
         // 示例1
-        ListNode[] lists1 = new ListNode[]{{1, 4, 5}, {1, 3, 4}, {2, 6}};
+        ListNode[] lists1 = new ListNode[]{
+                ListNode.fromArray(new int[]{1, 4, 5}),
+                ListNode.fromArray(new int[]{1, 3, 4}),
+                ListNode.fromArray(new int[]{2, 6})
+        };
         Object result1 = solution.solution(lists1);
         Object expected1 = null;
         boolean pass1 = TestUtil.isEqual(result1, expected1);
@@ -29,7 +33,7 @@ public class Lcof2_078 {
         System.out.println("示例2：" + (pass2 ? "通过" : "失败") + "，输出=" + TestUtil.format(result2) + "，期望=" + TestUtil.format(expected2));
 
         // 示例3
-        ListNode[] lists3 = new ListNode[]{{}};
+        ListNode[] lists3 = new ListNode[]{null};
         Object result3 = solution.solution(lists3);
         Object expected3 = ListNode.fromArray(new int[]{});
         boolean pass3 = TestUtil.isEqual(result3, expected3);

@@ -6,8 +6,16 @@ public class Lcci0103StringtoURL {
     // 题目描述：本目录 README.md。
 
     public String solution(String s, int length) {
-        // TODO：请实现解法
-        return null;
+        char[] charArray = s.toCharArray();
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < length; i++) {
+            if (charArray[i] != ' ') {
+                result.append(charArray[i]);
+            } else {
+                result.append("%20");
+            }
+        }
+        return result.toString();
     }
 
     public static void main(String[] args) {

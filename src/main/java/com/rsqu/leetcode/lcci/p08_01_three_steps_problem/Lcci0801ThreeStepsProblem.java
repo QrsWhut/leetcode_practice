@@ -16,7 +16,7 @@ public class Lcci0801ThreeStepsProblem {
         // 示例1
         int n1 = 3;
         Object result1 = solution.solution(n1);
-        Object expected1 = 4 说明: 有四种走法;
+        Object expected1 = 4; // 说明: 有四种走法
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

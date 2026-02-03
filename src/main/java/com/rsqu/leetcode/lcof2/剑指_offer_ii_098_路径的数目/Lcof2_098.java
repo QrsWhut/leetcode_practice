@@ -25,7 +25,7 @@ public class Lcof2_098 {
         int m2 = 3;
         int n2 = 2;
         Object result2 = solution.solution(m2, n2);
-        Object expected2 = 3 解释: 从左上角开始，总共有 3 条路径可以到达右下角。 1. 向右 -> 向下 -> 向下 2. 向下 -> 向下 -> 向右 3. 向下 -> 向右 -> 向下;
+        Object expected2 = 3; // 解释: 从左上角开始，总共有 3 条路径可以到达右下角。 1. 向右 -> 向下 -> 向下 2. 向下 -> 向下 -> 向右 3. 向下 -> 向右 -> 向下
         boolean pass2 = TestUtil.isEqual(result2, expected2);
         System.out.println("示例2：" + (pass2 ? "通过" : "失败") + "，输出=" + TestUtil.format(result2) + "，期望=" + TestUtil.format(expected2));
 

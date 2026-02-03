@@ -16,7 +16,7 @@ public class Lcci1706NumberOf2sInRange {
         // 示例1
         int n1 = 25;
         Object result1 = solution.solution(n1);
-        Object expected1 = 9 解释: (2, 12, 20, 21, 22, 23, 24, 25)(注意 22 应该算作两次);
+        Object expected1 = 9; // 解释: (2, 12, 20, 21, 22, 23, 24, 25)(注意 22 应该算作两次)
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

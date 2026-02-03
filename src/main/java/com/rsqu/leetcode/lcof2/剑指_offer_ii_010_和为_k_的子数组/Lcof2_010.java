@@ -17,7 +17,7 @@ public class Lcof2_010 {
         int[] nums1 = new int[]{1, 1, 1};
         int k1 = 2;
         Object result1 = solution.solution(nums1, k1);
-        Object expected1 = 2 解释: 此题 [1,1] 与 [1,1] 为两种不同的情况;
+        Object expected1 = 2; // 解释: 此题 [1,1] 与 [1,1] 为两种不同的情况
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

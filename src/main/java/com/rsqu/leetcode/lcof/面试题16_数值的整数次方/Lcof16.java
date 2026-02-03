@@ -33,7 +33,7 @@ public class Lcof16 {
         double x3 = 2.00000;
         int n3 = -2;
         Object result3 = solution.solution(x3, n3);
-        Object expected3 = 0.25000 解释:2-2 = 1/22 = 1/4 = 0.25;
+        Object expected3 = 0.25000; // 解释:2-2 = 1/22 = 1/4 = 0.25
         boolean pass3 = TestUtil.isEqual(result3, expected3);
         System.out.println("示例3：" + (pass3 ? "通过" : "失败") + "，输出=" + TestUtil.format(result3) + "，期望=" + TestUtil.format(expected3));
 

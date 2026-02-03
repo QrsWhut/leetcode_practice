@@ -27,7 +27,7 @@ public class Lcci0401RouteBetweenNodes {
         int n2 = 5;
         int[][] graph2 = new int[][]{{0, 1}, {0, 2}, {0, 4}, {0, 4}, {0, 1}, {1, 3}, {1, 4}, {1, 3}, {2, 3}, {3, 4}};
         int start2 = 0;
-        int target2 = 4 输出 true;
+        int target2 = 4; // 输出 true
         Object result2 = solution.solution(n2, graph2, start2, target2);
         System.out.println("示例2输出：" + TestUtil.format(result2));
 

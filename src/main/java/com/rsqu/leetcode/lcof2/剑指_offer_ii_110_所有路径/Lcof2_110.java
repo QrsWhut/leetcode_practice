@@ -17,7 +17,7 @@ public class Lcof2_110 {
         // 示例1
         int[][] graph1 = new int[][]{{1, 2}, {3}, {3}, {}};
         Object result1 = solution.solution(graph1);
-        Object expected1 = [[0,1,3],[0,2,3]] 解释:有两条路径 0 -> 1 -> 3 和 0 -> 2 -> 3;
+        Object expected1 = java.util.Arrays.asList(java.util.Arrays.asList(0,1,3),java.util.Arrays.asList(0,2,3)); // 解释:有两条路径 0 -> 1 -> 3 和 0 -> 2 -> 3
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

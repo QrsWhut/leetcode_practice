@@ -14,16 +14,16 @@ public class Lcci0506ConvertInteger {
         Lcci0506ConvertInteger solution = new Lcci0506ConvertInteger();
 
         // 示例1
-        int a1 = 29 （或者0b11101）;
-        int b1 = 15（或者0b01111）;
+        int a1 = 29; // 或者 0b11101
+        int b1 = 15; // 或者 0b01111
         Object result1 = solution.solution(a1, b1);
         Object expected1 = 2;
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 
         // 示例2
-        int a2 = 1，B = 2;
-        // TODO：为 b2 设置输入
+        int a2 = 1;
+        int b2 = 2;
         Object result2 = solution.solution(a2, b2);
         Object expected2 = 2;
         boolean pass2 = TestUtil.isEqual(result2, expected2);

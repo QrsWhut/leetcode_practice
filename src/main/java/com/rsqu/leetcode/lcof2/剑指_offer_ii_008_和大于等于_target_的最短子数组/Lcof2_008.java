@@ -17,7 +17,7 @@ public class Lcof2_008 {
         int target1 = 7;
         int[] nums1 = new int[]{2, 3, 1, 2, 4, 3};
         Object result1 = solution.solution(target1, nums1);
-        Object expected1 = 2 解释:子数组 [4,3] 是该条件下的长度最小的子数组。;
+        Object expected1 = 2; // 解释:子数组 [4,3] 是该条件下的长度最小的子数组。
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

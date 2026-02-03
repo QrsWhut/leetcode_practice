@@ -23,7 +23,7 @@ public class Lcci0106CompressString {
         // 示例2
         String s2 = "abbccd";
         Object result2 = solution.solution(s2);
-        Object expected2 = ""abbccd" 解释:"abbccd"压缩后为"a1b2c2d1"，比原字符串长度更长。";
+        Object expected2 = "abbccd"; // 解释:"abbccd"压缩后为"a1b2c2d1"，比原字符串长度更长。"
         boolean pass2 = TestUtil.isEqual(result2, expected2);
         System.out.println("示例2：" + (pass2 ? "通过" : "失败") + "，输出=" + TestUtil.format(result2) + "，期望=" + TestUtil.format(expected2));
 

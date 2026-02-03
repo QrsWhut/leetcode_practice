@@ -17,7 +17,7 @@ public class Lcci1615MasterMind {
         String solution1 = "RGBY";
         String guess1 = "GGRR";
         Object result1 = solution.solution(solution1, guess1);
-        Object expected1 = [1,1] 解释: 猜中1次，伪猜中1次。;
+        Object expected1 = java.util.Arrays.asList(1,1); // 解释: 猜中1次，伪猜中1次。
         boolean pass1 = TestUtil.isEqual(result1, expected1);
         System.out.println("示例1：" + (pass1 ? "通过" : "失败") + "，输出=" + TestUtil.format(result1) + "，期望=" + TestUtil.format(expected1));
 

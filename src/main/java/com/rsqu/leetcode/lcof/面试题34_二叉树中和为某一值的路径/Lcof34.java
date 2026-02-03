@@ -17,7 +17,7 @@ public class Lcof34 {
 
         // 示例1
         TreeNode root1 = TreeNode.fromArray(new Integer[]{5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1});
-        // TODO：为 target1 设置输入
+        int target1 = 22;
         Object result1 = solution.solution(root1, target1);
         Object expected1 = java.util.Arrays.asList(java.util.Arrays.asList(5, 4, 11, 2), java.util.Arrays.asList(5, 8, 4, 5));
         boolean pass1 = TestUtil.isEqual(result1, expected1);
@@ -25,7 +25,7 @@ public class Lcof34 {
 
         // 示例2
         TreeNode root2 = TreeNode.fromArray(new Integer[]{1, 2, 3});
-        // TODO：为 target2 设置输入
+        int target2 = 5;
         Object result2 = solution.solution(root2, target2);
         Object expected2 = java.util.Arrays.asList();
         boolean pass2 = TestUtil.isEqual(result2, expected2);
@@ -33,7 +33,7 @@ public class Lcof34 {
 
         // 示例3
         TreeNode root3 = TreeNode.fromArray(new Integer[]{1, 2});
-        // TODO：为 target3 设置输入
+        int target3 = 5;
         Object result3 = solution.solution(root3, target3);
         Object expected3 = java.util.Arrays.asList();
         boolean pass3 = TestUtil.isEqual(result3, expected3);
