@@ -11,9 +11,10 @@ public class Lcci0105OneAway {
     public boolean solution(String first, String second) {
         int len1 = first.length();
         int len2 = second.length();
+        int subLen = Math.abs(len1-len2);
         char[] charArray = first.toCharArray();
         char[] charArray2 = second.toCharArray();
-        if (Math.abs(len1 - len2) > 1) {
+        if (subLen > 1) {
             return false;
         }
         int[] str1 = new int[26];
@@ -30,7 +31,8 @@ public class Lcci0105OneAway {
                 count++;
             }
         }
-        if (count >1) return false;
+        if (subLen == 1 && count > 1) return false;
+        if (subLen == 0 && count > 2) return false;
         return true;
     }
 

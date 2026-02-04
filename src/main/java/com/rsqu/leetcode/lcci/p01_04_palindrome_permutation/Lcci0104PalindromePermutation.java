@@ -9,20 +9,19 @@ public class Lcci0104PalindromePermutation {
     // 题目描述：本目录 README.md。
 
     public boolean solution(String s) {
-        if (s == null || s.length() == 0) {
+        if (s == null || s.isEmpty()) {
             return true;
         }
         Map<Character, Integer> map = new HashMap<>();
         char[] charArray = s.toCharArray();
-        for (int i = 0; i < charArray.length; i++) {
-            map.put(charArray[i],map.getOrDefault(charArray[i],0)+1);
+        for (char c : charArray) {
+            map.put(c, map.getOrDefault(c, 0) + 1);
         }
         int count = 0;
         for (Integer i : map.values()){
-            if (i==1) count++;
+            if (i%2==1) count++;
         }
-        if (count > 1) return false;
-        return true;
+        return count <= 1;
     }
 
     public static void main(String[] args) {
