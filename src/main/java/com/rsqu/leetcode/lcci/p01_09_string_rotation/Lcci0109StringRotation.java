@@ -6,7 +6,28 @@ public class Lcci0109StringRotation {
     // 题目描述：本目录 README.md。
 
     public boolean solution(String s1, String s2) {
-        // TODO：请实现解法
+        int l1 = s1.length();
+        int l2 = s2.length();
+        if (l1 != l2) {
+            return false;
+        }
+        int count = 0;
+        int start;
+        for (int i = 0; i < l2; i++) {
+            if (s1.charAt(0) == s2.charAt(i)) {
+                start = i;
+                for (int j = start,z = 0; z < s1.length(); z++,j=(j+1)%l2) {
+                    if (s1.charAt(z) == s2.charAt(j)) {
+                        count++;
+                    } else {
+                        count = 0;
+                    }
+                }
+                if (count == l1) {
+                    return true;
+                }
+            }
+        }
         return false;
     }
 

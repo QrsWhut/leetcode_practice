@@ -6,8 +6,27 @@ public class Lcci0106CompressString {
     // 题目描述：本目录 README.md。
 
     public String solution(String s) {
-        // TODO：请实现解法
-        return null;
+        int n = s.length();
+        if (n == 0 || n == 1)
+            return s;
+        int i = 0, j = 0;
+        int count = 1;
+        StringBuilder sb = new StringBuilder();
+        while (i < n && j < n - 1) {
+            if(s.charAt(j)==s.charAt(j+1)){
+                count++;
+                j++;
+            } else {
+                sb.append(s.charAt(i));
+                sb.append(count);
+                count = 1;
+                i=j+1;
+                j++;
+            }
+        }
+        sb.append(s.charAt(i));
+        sb.append(count);
+        return sb.length() <= n ? sb.toString() : s;
     }
 
     public static void main(String[] args) {
