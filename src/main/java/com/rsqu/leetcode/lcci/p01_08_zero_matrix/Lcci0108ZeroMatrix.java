@@ -18,7 +18,7 @@ public class Lcci0108ZeroMatrix {
         }
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
-                if (cols[j] == 0 || rows[i] == 0) {
+                if (cols[j] == 1 || rows[i] == 1) {
                     matrix[i][j] = 0;
                 }
             }

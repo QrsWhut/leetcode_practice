@@ -8,6 +8,9 @@ public class Lcci0109StringRotation {
     public boolean solution(String s1, String s2) {
         int l1 = s1.length();
         int l2 = s2.length();
+        if (s1.isEmpty() && s2.isEmpty()) {
+            return true;
+        }
         if (l1 != l2) {
             return false;
         }

@@ -26,7 +26,7 @@ public class Lcci0106CompressString {
         }
         sb.append(s.charAt(i));
         sb.append(count);
-        return sb.length() <= n ? sb.toString() : s;
+        return sb.length() < n ? sb.toString() : s;
     }
 
     public static void main(String[] args) {
