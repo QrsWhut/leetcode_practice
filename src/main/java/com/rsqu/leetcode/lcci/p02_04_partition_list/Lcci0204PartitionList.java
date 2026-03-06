@@ -7,8 +7,31 @@ public class Lcci0204PartitionList {
     // 题目描述：本目录 README.md。
 
     public ListNode solution(ListNode head, int x) {
-        // TODO：请实现解法
-        return null;
+        ListNode small = new ListNode(0);
+        ListNode big;
+        ListNode cur = head;
+        ListNode curS= small;
+        while (cur != null && cur.val < x ) {
+            ListNode newNode = new ListNode(cur.val);
+            curS.next = newNode;
+            curS = curS.next;
+            cur = cur.next;
+        }
+        if (cur == null) {
+            return head;
+        }
+        big = cur;
+        while (cur != null && cur.next != null) {
+            if (cur.next.val < x){
+                ListNode newNode = new ListNode(cur.next.val);
+                curS.next = newNode;
+                curS = curS.next;
+                cur.next = cur.next.next;
+            }
+            cur = cur.next;
+        }
+        curS.next = big;
+        return small.next;
     }
 
     public static void main(String[] args) {

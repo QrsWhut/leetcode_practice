@@ -46,6 +46,7 @@ This repository is a Java LeetCode practice project.
 A skill is a set of local instructions to follow that is stored in a `SKILL.md` file. Below is the list of skills that can be used. Each entry includes a name, description, and file path so you can open the source for full instructions when using a specific skill.
 ### Available skills
 - 部署流程: 将 DataShareService 项目部署到测试站，支持跳过构建和完整构建两种模式 (file: C:/Users/rsqu.rose/.codex/skills/deploy/SKILL.md)
+- generate-main-examples: 为当前 Java LeetCode 练习仓库根据同目录 README.md 生成或同步 main 函数测试示例。仅在用户要求“根据 README 补 main 示例”“补 main 测试样例”“同步 README 示例到 main”时使用。默认只允许修改 main 和必要 import，禁止改动算法实现，除非用户明确授权。 (file: D:/rsqu/SVN/codePractice/.project-skills/generate-main-examples/SKILL.md)
 - skill-creator: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations. (file: C:/Users/rsqu.rose/.codex/skills/.system/skill-creator/SKILL.md)
 - skill-installer: Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos). (file: C:/Users/rsqu.rose/.codex/skills/.system/skill-installer/SKILL.md)
 ### How to use skills

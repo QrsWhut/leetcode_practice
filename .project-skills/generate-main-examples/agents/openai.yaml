@@ -1,0 +1,4 @@
+interface:
+  display_name: "补Main示例"
+  short_description: "根据README补Java题目main示例，默认只改main"
+  default_prompt: "Use $generate-main-examples to add README examples into the target Java class main method."
