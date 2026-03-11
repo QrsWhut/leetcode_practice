@@ -26,7 +26,7 @@ public class Lcci0205SumLists {
             cur.next = new ListNode(sum%10);
             cur = cur.next;
         }
-        if (one == null && two != null) {
+        if (one == null && two == null) {
             if (flag == 1) {
                 cur.next = new ListNode(1);
             }
