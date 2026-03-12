@@ -7,6 +7,10 @@ import java.util.Objects;
  * 测试工具类，用于比较结果并格式化输出。
  */
 public final class TestUtil {
+    private static final char ARRAY_LEFT_BRACKET = '[';
+    private static final char ARRAY_RIGHT_BRACKET = ']';
+    private static final char ARRAY_SEPARATOR = ',';
+
     private TestUtil() {
     }
 
@@ -32,6 +36,9 @@ public final class TestUtil {
         }
         if (actual instanceof TreeNode && expected instanceof TreeNode) {
             return TreeNode.toString((TreeNode) actual).equals(TreeNode.toString((TreeNode) expected));
+        }
+        if (actual instanceof ListNode[] && expected instanceof ListNode[]) {
+            return isListNodeArrayEqual((ListNode[]) actual, (ListNode[]) expected);
         }
         if (actual.getClass().isArray() && expected.getClass().isArray()) {
             if (actual instanceof int[] && expected instanceof int[]) {
@@ -79,6 +86,9 @@ public final class TestUtil {
         if (value instanceof TreeNode) {
             return TreeNode.toString((TreeNode) value);
         }
+        if (value instanceof ListNode[]) {
+            return formatListNodeArray((ListNode[]) value);
+        }
         if (value.getClass().isArray()) {
             if (value instanceof int[]) {
                 return Arrays.toString((int[]) value);
@@ -107,5 +117,64 @@ public final class TestUtil {
             return Arrays.deepToString((Object[]) value);
         }
         return String.valueOf(value);
+    }
+
+    /**
+     * 比较链表数组中的每一条链表是否按节点值相等。
+     *
+     * @param actual 实际链表数组
+     * @param expected 期望链表数组
+     * @return 是否相等
+     */
+    private static boolean isListNodeArrayEqual(ListNode[] actual, ListNode[] expected) {
+        if (actual.length != expected.length) {
+            return false;
+        }
+        for (int i = 0; i < actual.length; i++) {
+            if (isEqual(actual[i], expected[i]) == false) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * 将链表数组格式化为 LeetCode 风格的二维数组字符串。
+     *
+     * @param value 链表数组
+     * @return 格式化结果
+     */
+    private static String formatListNodeArray(ListNode[] value) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(ARRAY_LEFT_BRACKET);
+        for (int i = 0; i < value.length; i++) {
+            if (i > 0) {
+                sb.append(ARRAY_SEPARATOR);
+            }
+            sb.append(formatListNode(value[i]));
+        }
+        sb.append(ARRAY_RIGHT_BRACKET);
+        return sb.toString();
+    }
+
+    /**
+     * 将单条链表格式化为数组风格字符串。
+     *
+     * @param head 链表头节点
+     * @return 数组风格字符串
+     */
+    private static String formatListNode(ListNode head) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(ARRAY_LEFT_BRACKET);
+        ListNode current = head;
+        while (current != null) {
+            sb.append(current.val);
+            current = current.next;
+            if (current != null) {
+                sb.append(ARRAY_SEPARATOR);
+            }
+        }
+        sb.append(ARRAY_RIGHT_BRACKET);
+        return sb.toString();
     }
 }
