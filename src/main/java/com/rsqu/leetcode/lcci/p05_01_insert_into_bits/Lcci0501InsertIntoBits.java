@@ -6,8 +6,10 @@ public class Lcci0501InsertIntoBits {
     // 题目描述：本目录 README.md。
 
     public int solution(int n, int m, int i, int j) {
-        // TODO：请实现解法
-        return 0;
+        for (int k = i; k <= j; k++) {
+            n &= ~(1 << k);
+        }
+        return (m << i) | n;
     }
 
     public static void main(String[] args) {
