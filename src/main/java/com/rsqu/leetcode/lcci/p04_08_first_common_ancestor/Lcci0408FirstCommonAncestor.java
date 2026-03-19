@@ -6,9 +6,26 @@ import com.rsqu.leetcode.util.TreeNode;
 public class Lcci0408FirstCommonAncestor {
     // 题目描述：本目录 README.md。
 
+    public static TreeNode res;
+
     public TreeNode solution(TreeNode root, TreeNode p, TreeNode q) {
-        // TODO：请实现解法
-        return null;
+        res = null;
+        dfs(root, p, q);
+        return res;
+    }
+
+    public boolean dfs(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null) {
+            return false;
+        }
+
+        boolean self = root == p || root == q;
+        boolean left = dfs(root.left, p, q);
+        boolean right = dfs(root.right, p, q);
+        if ((self && left) || (self && right) || (left && right)) {
+            res = root;
+        }
+        return self || left || right;
     }
 
     public static void main(String[] args) {
@@ -16,26 +33,26 @@ public class Lcci0408FirstCommonAncestor {
 
         // 示例1
         TreeNode root1 = TreeNode.fromArray(new Integer[]{3, 5, 1, 6, 2, 0, 8, null, null, 7, 4});
-        TreeNode p1 = null;
-        TreeNode q1 = null;
-        Object result1 = solution.solution(root1, p1, q1);
-        System.out.println("示例1输出：" + TestUtil.format(result1));
+        TreeNode p1 = root1.left;
+        TreeNode q1 = root1.right;
+        TreeNode resultNode1 = solution.solution(root1, p1, q1);
+        Integer result1 = resultNode1 == null ? null : resultNode1.val;
+        Integer expected1 = 3;
+        boolean pass1 = TestUtil.isEqual(result1, expected1);
+        System.out.println("示例1：" + (pass1 ? "通过" : "失败")
+                + "，输出=" + TestUtil.format(result1)
+                + "，期望=" + TestUtil.format(expected1));
 
         // 示例2
-        TreeNode root2 = null;
-        TreeNode p2 = null;
-        TreeNode q2 = null;
-        Object result2 = solution.solution(root2, p2, q2);
-        System.out.println("示例2输出：" + TestUtil.format(result2));
-
-        // 示例3
-        TreeNode root3 = TreeNode.fromArray(new Integer[]{3, 5, 1, 6, 2, 0, 8, null, null, 7, 4});
-        TreeNode p3 = null;
-        TreeNode q3 = null;
-        Object result3 = solution.solution(root3, p3, q3);
-        Object expected3 = null;
-        boolean pass3 = TestUtil.isEqual(result3, expected3);
-        System.out.println("示例3：" + (pass3 ? "通过" : "失败") + "，输出=" + TestUtil.format(result3) + "，期望=" + TestUtil.format(expected3));
-
+        TreeNode root2 = TreeNode.fromArray(new Integer[]{3, 5, 1, 6, 2, 0, 8, null, null, 7, 4});
+        TreeNode p2 = root2.left;
+        TreeNode q2 = root2.left.right.right;
+        TreeNode resultNode2 = solution.solution(root2, p2, q2);
+        Integer result2 = resultNode2 == null ? null : resultNode2.val;
+        Integer expected2 = 5;
+        boolean pass2 = TestUtil.isEqual(result2, expected2);
+        System.out.println("示例2：" + (pass2 ? "通过" : "失败")
+                + "，输出=" + TestUtil.format(result2)
+                + "，期望=" + TestUtil.format(expected2));
     }
 }
