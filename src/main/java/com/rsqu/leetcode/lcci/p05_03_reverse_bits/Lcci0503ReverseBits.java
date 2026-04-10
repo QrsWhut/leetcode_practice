@@ -6,8 +6,19 @@ public class Lcci0503ReverseBits {
     // 题目描述：本目录 README.md。
 
     public int solution(int num) {
-        // TODO：请实现解法
-        return 0;
+
+        int j = 0;
+        int zeroNum = 0;
+        int maxNum = 0;
+        for (int i = 0; i < 32; i++) {
+            zeroNum += (num >> i & 1) ^ 1;
+            while (zeroNum > 1) {
+                zeroNum -= num >> j & 1 ^ 1;
+                ++j;
+            }
+            maxNum = Math.max(maxNum, i-j+1);
+        }
+        return maxNum;
     }
 
     public static void main(String[] args) {

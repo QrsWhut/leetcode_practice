@@ -6,8 +6,15 @@ public class Lcci0801ThreeStepsProblem {
     // 题目描述：本目录 README.md。
 
     public int solution(int n) {
-        // TODO：请实现解法
-        return 0;
+        int dp[] = new int[n+1];
+        dp[0] = 1;
+        dp[1] = 1;
+        dp[2] = 2;
+        dp[3] = 4;
+        for (int i = 4; i <= n; i++) {
+            dp[i] = dp[i-1] + dp[i-2] + dp[i-3];
+        }
+        return dp[n];
     }
 
     public static void main(String[] args) {

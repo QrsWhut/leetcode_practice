@@ -6,8 +6,14 @@ public class Lcci0502BinaryNumbertoString {
     // 题目描述：本目录 README.md。
 
     public String solution(double num) {
-        // TODO：请实现解法
-        return null;
+        StringBuilder ans = new StringBuilder("0.");
+        while (ans.length() < 32 && num != 0) {
+            num *= 2;
+            int x = (int) num;
+            ans.append(x);
+            num -= x;
+        }
+        return num != 0 ? "ERROR" : ans.toString();
     }
 
     public static void main(String[] args) {

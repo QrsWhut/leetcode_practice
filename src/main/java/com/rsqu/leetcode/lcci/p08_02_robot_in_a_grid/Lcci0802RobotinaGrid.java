@@ -11,6 +11,10 @@ public class Lcci0802RobotinaGrid {
         return null;
     }
 
+    public void dfs(int[][] obstacleGrid, int row, int col, List<List<Integer>> list) {
+
+    }
+
     public static void main(String[] args) {
         Lcci0802RobotinaGrid solution = new Lcci0802RobotinaGrid();
 
