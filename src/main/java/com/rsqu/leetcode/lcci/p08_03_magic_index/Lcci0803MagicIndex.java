@@ -6,8 +6,12 @@ public class Lcci0803MagicIndex {
     // 题目描述：本目录 README.md。
 
     public int solution(int[] nums) {
-        // TODO：请实现解法
-        return 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i]==i){
+                return i;
+            }
+        }
+        return -1;
     }
 
     public static void main(String[] args) {
