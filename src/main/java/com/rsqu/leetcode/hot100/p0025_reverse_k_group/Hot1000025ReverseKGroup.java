@@ -11,21 +11,18 @@ public class Hot1000025ReverseKGroup {
             return head;
         }
         ListNode preNode = first;
-        ListNode curNode = head;
-        while (curNode != null) {
-            int count = 1;
-            for (int i = 1; i < k && curNode != null; i++) {
+        while (preNode.next != null) {
+            ListNode curNode = preNode;
+            for (int i = 0; i < k && curNode != null; i++) {
                 curNode = curNode.next;
-                count++;
             }
-            if (count != k) {
+            if (curNode == null) {
                 break;
             }
             ListNode groupTail = preNode.next;
             ListNode nextGroupHead = curNode.next;
             reverse(preNode, nextGroupHead);
             preNode = groupTail;
-            curNode = nextGroupHead;
         }
         return first.next;
     }
