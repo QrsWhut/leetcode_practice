@@ -11,7 +11,7 @@ public class Hot1000230KthSmallest {
         Deque<TreeNode> stack = new ArrayDeque<>();
         TreeNode current = root;
 
-        while (current != null || stack.isEmpty() == false) {
+        while (current != null || !stack.isEmpty()) {
             while (current != null) {
                 stack.push(current);
                 current = current.left;
