@@ -2,11 +2,36 @@ package com.rsqu.leetcode.lcci.p04_01_route_between_nodes;
 
 import com.rsqu.leetcode.util.TestUtil;
 
+import java.util.LinkedList;
+
 public class Lcci0401RouteBetweenNodes {
     // 题目描述：本目录 README.md。
 
     public boolean solution(int n, int[][] graph, int start, int target) {
-        // TODO：请实现解法
+        LinkedList<Integer>[] adj = new LinkedList[n];
+        for (int i = 0; i < n; i++) {
+            adj[i] = new LinkedList<>();
+        }
+        for (int[] edge : graph) {
+            adj[edge[0]].add(edge[1]);
+        }
+        boolean[] visited = new boolean[n];
+        return dfs(adj, start, target, visited);
+    }
+
+    private boolean dfs(LinkedList<Integer>[] adj, int start, int target, boolean[] visited) {
+        if (start == target) {
+            return true;
+        }
+        if (visited[start]) {
+            return false;
+        }
+        visited[start] = true;
+        for (int i : adj[start]) {
+            if (dfs(adj, i, target, visited)) {
+                return true;
+            }
+        }
         return false;
     }
 

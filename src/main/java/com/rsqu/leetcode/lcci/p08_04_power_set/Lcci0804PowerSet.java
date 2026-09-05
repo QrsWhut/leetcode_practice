@@ -5,10 +5,25 @@ import com.rsqu.leetcode.util.TestUtil;
 
 public class Lcci0804PowerSet {
     // 题目描述：本目录 README.md。
+    List<List<Integer>> res = new LinkedList<>();
+    int[] nums;
 
     public List<List<Integer>> solution(int[] nums) {
-        // TODO：请实现解法
-        return null;
+        this.nums = nums;
+        List<Integer> list = new ArrayList<>();
+        dfs(list,0);
+        return res;
+    }
+
+    private void dfs(List<Integer> list,int num){
+        if (num == nums.length){
+            res.add(new ArrayList<>(list));
+            return;
+        }
+        dfs(list,num + 1);
+        list.add(nums[num]);
+        dfs(list,num+1);
+        list.remove(list.size() -1);
     }
 
     public static void main(String[] args) {

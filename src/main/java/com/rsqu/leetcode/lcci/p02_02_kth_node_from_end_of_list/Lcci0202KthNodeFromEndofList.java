@@ -7,8 +7,19 @@ public class Lcci0202KthNodeFromEndofList {
     // 题目描述：本目录 README.md。
 
     public int solution(ListNode head, int k) {
-        // TODO：请实现解法
-        return 0;
+        ListNode first = head;
+        ListNode second = head;
+        int size = 0;
+        while (first != null) {
+            first = first.next;
+            size++;
+        }
+        int target = size - k + 1;
+        while (target - 1 > 0) {
+            second = second.next;
+            target--;
+        }
+        return second.val;
     }
 
     public static void main(String[] args) {

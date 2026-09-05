@@ -7,7 +7,12 @@ public class Lcci0506ConvertInteger {
 
     public int solution(int a, int b) {
         // TODO：请实现解法
-        return 0;
+        int num = a ^ b;
+        int count = 0;
+        for (int i = 0; i < 31; i++) {
+            count += (num >> i) & 1;
+        }
+        return count;
     }
 
     public static void main(String[] args) {

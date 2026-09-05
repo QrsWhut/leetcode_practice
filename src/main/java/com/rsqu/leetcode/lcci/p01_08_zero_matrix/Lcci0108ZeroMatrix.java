@@ -6,7 +6,23 @@ public class Lcci0108ZeroMatrix {
     // 题目描述：本目录 README.md。
 
     public void solution(int[][] matrix) {
-        // TODO：请实现解法
+        int[] rows = new int[matrix.length];
+        int[] cols = new int[matrix[0].length];
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if (matrix[i][j] == 0) {
+                    rows[i] = 1;
+                    cols[j] = 1;
+                }
+            }
+        }
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if (cols[j] == 1 || rows[i] == 1) {
+                    matrix[i][j] = 0;
+                }
+            }
+        }
     }
 
     public static void main(String[] args) {

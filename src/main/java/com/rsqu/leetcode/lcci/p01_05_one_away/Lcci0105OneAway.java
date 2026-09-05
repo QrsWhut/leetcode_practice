@@ -9,29 +9,32 @@ public class Lcci0105OneAway {
     // 题目描述：本目录 README.md。
 
     public boolean solution(String first, String second) {
-        int len1 = first.length();
-        int len2 = second.length();
-        char[] charArray = first.toCharArray();
-        char[] charArray2 = second.toCharArray();
-        if (Math.abs(len1 - len2) > 1) {
+        int m = first.length(), n = second.length();
+        if (m < n) {
+            return solution(second, first);
+        }
+        if (m - n > 1) {
             return false;
         }
-        int[] str1 = new int[26];
-        int[] str2 = new int[26];
-        for (char c : charArray) {
-            str1[c - 'a']++;
+        int cnt = 0;
+        if (m == n) {
+            for (int i = 0; i < n; ++i) {
+                if (first.charAt(i) != second.charAt(i)) {
+                    if (++cnt > 1) {
+                        return false;
+                    }
+                }
+            }
+            return true;
         }
-        for (char c : charArray2) {
-            str2[c - 'a']++;
-        }
-        int count = 0;
-        for (int i = 0; i < 26; i++) {
-            if (str1[i] != str2[i]) {
-                count++;
+        for (int i = 0, j = 0; i < m; ++i) {
+            if (j == n || (j < n && first.charAt(i) != second.charAt(j))) {
+                ++cnt;
+            } else {
+                ++j;
             }
         }
-        if (count >1) return false;
-        return true;
+        return cnt < 2;
     }
 
     public static void main(String[] args) {

@@ -7,8 +7,31 @@ public class Lcci0802RobotinaGrid {
     // 题目描述：本目录 README.md。
 
     public List<List<Integer>> solution(int[][] obstacleGrid) {
-        // TODO：请实现解法
-        return null;
+        List<List<Integer>> res = new LinkedList<>();
+
+        return dfs(obstacleGrid,0,0,res) ? res : Collections.emptyList();
+    }
+
+    public boolean dfs(int[][] obstacleGrid, int row, int col, List<List<Integer>> list) {
+        if (row == obstacleGrid.length-1 && col == obstacleGrid[0].length-1){
+            list.add(Arrays.asList(row,col));
+            return true;
+        }
+        if (row == obstacleGrid.length || col == obstacleGrid[0].length){
+            return false;
+        }
+        if (obstacleGrid[row][col] == 1) {
+            return false;
+        }
+        list.add(Arrays.asList(row, col));
+        obstacleGrid[row][col] = 1;
+        if (dfs(obstacleGrid,row+1,col,list) || dfs(obstacleGrid, row, col+1, list)){
+            return true;
+        } else{
+            list.remove(list.size()-1);
+            return false;
+        }
+
     }
 
     public static void main(String[] args) {

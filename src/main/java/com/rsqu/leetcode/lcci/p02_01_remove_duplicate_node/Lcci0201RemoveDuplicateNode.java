@@ -3,12 +3,32 @@ package com.rsqu.leetcode.lcci.p02_01_remove_duplicate_node;
 import com.rsqu.leetcode.util.TestUtil;
 import com.rsqu.leetcode.util.ListNode;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Lcci0201RemoveDuplicateNode {
     // 题目描述：本目录 README.md。
 
     public ListNode solution(ListNode head) {
-        // TODO：请实现解法
-        return null;
+        Set<Integer> set = new HashSet<>();
+        if (head == null || head.next == null) {
+            return head;
+        }
+        set.add(head.val);
+        ListNode cur = head;
+        ListNode next = head;
+        while (next != null) {
+            next = cur.next;
+            if (set.contains(next.val)) {
+                cur.next = next.next;
+                next = next.next;
+            } else {
+                set.add(next.val);
+                cur = next;
+                next = next.next;
+            }
+        }
+        return head;
     }
 
     public static void main(String[] args) {
